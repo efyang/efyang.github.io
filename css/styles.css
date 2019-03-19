@@ -72,6 +72,7 @@ main > .tagline {
 }
 
 .projects-wrapper {
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -114,6 +115,37 @@ main > .tagline {
 ul#skills li {
     display: inline;
     border-radius: 25px;
-    background: #73AD21;
+    background: #b3e5fc;
     padding: 5px;
+}
+
+ul#skills li:hover {
+    background-color: #81d4fa;
+}
+
+.about-wrapper {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: #bcaaa4;
+}
+
+.about-section {
+    padding: 80px 30px;
+    margin: auto;
+    width: 75%;
+    color: #485564;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    text-align: center;
+}
+
+.about-section > h1 {
+    font-size: 3.75em;
+    padding: 0px 0px 20px;
+}
+
+.about-section> ul {
+    padding: 30px 0px 0px;
 }
