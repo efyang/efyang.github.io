@@ -1,25 +1,29 @@
 navbar ul {
-  list-style-type: none;
-  overflow: hidden;
-  background-color: #333;
-  position: fixed;
-  top: 0;
-  width: 100%;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1em;
+    font-weight: 600;
+
+    list-style-type: none;
+    overflow: hidden;
+    background-color: #333;
+    position: fixed;
+    top: 0;
+    width: 100%;
 }
 
 navbar li {
-  float: left;
+    float: left;
 }
 
 navbar li a {
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
 }
 
 /* Change the link color to #111 (black) on hover */
 navbar li a:hover {
-  background-color: #111;
+    background-color: #111;
 }
