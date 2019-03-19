@@ -27,3 +27,7 @@ navbar li a {
 navbar li a:hover {
     background-color: #111;
 }
+
+navbar li a#blog {
+    color: #ffbac5;
+}

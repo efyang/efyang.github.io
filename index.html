@@ -32,7 +32,8 @@
         <ul>
             <li><a href="#home">home</a></li>
             <li><a href="#projects">projects</a></li>
-            <li style="float:right"><a class="active" href="#about">about</a></li>
+            <li><a href="#about">about</a></li>
+            <li><a id="blog" href="blog.html">blog</a></li>
         </ul>
         </navbar>
 
@@ -49,7 +50,16 @@
 
         <div class="projects-wrapper">
             <div class="projects" id="projects">
-                <h1>projects</h1>
+                <div class="hover-link-container">
+                    <div class="link-wrapper">
+                        <a href="#projects">
+                            <img class="link-img" src="octicons/link.svg"></img>
+                        </a>
+                    </div>
+                    <h1>projects</h1>
+                    <!-- spacer element -->
+                    <img class="link-img" src="octicons/link.svg" style="visibility:hidden;"></img>
+                </div>
 
                 <div class="project">
                     <h2>project 1</h2>
@@ -73,8 +83,19 @@
 
         <div class="about-wrapper">
             <div class="about-section" id="about">
-                <h1>about me</h1>
+                <div class="hover-link-container">
+                    <div class="link-wrapper">
+                        <a href="#about">
+                            <img class="link-img" src="octicons/link.svg"></img>
+                        </a>
+                    </div>
+                    <h1>about me</h1>
+                    <!-- spacer element -->
+                    <img class="link-img" src="octicons/link.svg" style="visibility:hidden;"></img>
+                </div>
                 <p>lorem ipsum dolor sit amet, consectetur adipiscing elit. sed enim ex, pharetra sed lorem in, accumsan dapibus elit. aliquam erat volutpat. cras consequat erat enim, eu varius metus tempor et. sed varius tempor libero vel mattis. cras lacinia venenatis erat, et sollicitudin elit imperdiet in. suspendisse vel commodo libero. nullam dui odio, rutrum non imperdiet sit amet, malesuada eget ipsum. quisque dictum sit amet lorem non efficitur. integer viverra fringilla nunc, vel rhoncus lectus congue ut. nullam non consequat nibh. vestibulum rutrum leo a nulla suscipit condimentum. nam blandit imperdiet sapien ac imperdiet. class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. proin aliquam libero eget odio ultrices egestas. nullam consectetur tincidunt tellus sed fringilla.</p>
+
+                <p>Thanks for stopping by!</p>
 
                 <ul>
                     <li>Email: </li>

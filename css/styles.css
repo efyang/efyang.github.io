@@ -128,7 +128,7 @@ ul#skills li:hover {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background: #bcaaa4;
+    background: #efdcd5;
 }
 
 .about-section {
@@ -148,4 +148,32 @@ ul#skills li:hover {
 
 .about-section> ul {
     padding: 30px 0px 0px;
+}
+
+.about-section > p {
+    padding: 10px 0px;
+}
+
+.hover-link-container {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+.hover-link-container > h1 {
+    padding: 0% 2%;
+}
+
+.link-wrapper {
+    align-self: center;
+    opacity: 0;
+}
+
+.link-wrapper:hover {
+    opacity: 1;
+}
+
+.link-img {
+    height: 2em;
+    width: 2em;
 }
