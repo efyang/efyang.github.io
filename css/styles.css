@@ -1,8 +1,17 @@
 /* Typography */
 
 html {
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    font-smoothing: antialiased;
     font-family: 'Roboto', sans-serif;
     scroll-behavior: smooth;
+}
+
+@-moz-document url-prefix() {
+  body {
+    font-weight: lighter !important;
+  }
 }
 
 @media (min-width: 576px) {
