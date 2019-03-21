@@ -82,7 +82,7 @@ main > .tagline {
 .projects {
     padding: 80px 30px;
     margin: auto;
-    width: 75%;
+    width: 85%;
     color: #485564;
     font-family: 'Montserrat', sans-serif;
     font-weight: 300;
@@ -134,7 +134,7 @@ ul#skills li:hover {
 .about-section {
     padding: 80px 30px;
     margin: auto;
-    width: 75%;
+    width: 85%;
     color: #485564;
     font-family: 'Montserrat', sans-serif;
     font-weight: 300;

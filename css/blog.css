@@ -7,9 +7,9 @@
 }
 
 .posts {
-    padding: 80px 30px;
+    padding: 80px 0;
     margin: auto;
-    width: 85%;
+    width: 90%;
     color: #485564;
     font-family: 'Montserrat', sans-serif;
     font-weight: 300;
@@ -18,20 +18,26 @@
 
 .posts > h1 {
     font-size: 3.75em;
-    padding: 0px 0px 20px;
 }
 
 .post {
-    background: #bbdefb;
+    background: #e6edf2;
     font-family: 'Quicksand', sans-serif;
+    padding: 1.5% 3% 2.5%;
+    margin: 2%;
+    border-radius: 1em;
 }
 
 .post > h2 {
     font-family: 'Montserrat', sans-serif;
     font-size: 2.5em;
-    padding: 20px 0px 15px;
 }
 
 .post > p {
-    padding: 10px 0px;
+    padding: 2% 0 0;
+}
+
+.post > h2 > a {
+    text-decoration: inherit;
+    color: inherit;
 }
