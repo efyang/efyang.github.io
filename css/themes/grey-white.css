@@ -12,3 +12,7 @@ main {
 .icons-social a svg path{
 	fill: #FAFAFA;
 }
+
+a:active, a:focus {
+    outline: none;
+}

@@ -31,13 +31,43 @@
 .post > h2 {
     font-family: 'Montserrat', sans-serif;
     font-size: 2.5em;
+    transition: 0.4s;
 }
 
-.post > p {
+.post p {
     padding: 2% 0 0;
+}
+
+.post > a {
+    text-decoration: inherit;
+    color: inherit;
+}
+
+.post > h2:hover {
+    color: #64a2bf;
 }
 
 .post > h2 > a {
     text-decoration: inherit;
     color: inherit;
+}
+
+.continue-button-wrapper {
+    padding: 2% 0 0;
+    width: 100%;
+}
+
+.continue-button {
+    text-decoration: inherit;
+    color: inherit;
+    padding: 0.25em 0.7em;
+    border: 1px solid;
+    border-radius: 1em;
+    transition: 0.3s;
+}
+
+.continue-button:hover {
+    background: #64a2bf;
+    color: #FAFAFA;
+    border: 0 solid;
 }
