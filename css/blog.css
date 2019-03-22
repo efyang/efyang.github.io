@@ -1,6 +1,5 @@
 .posts-wrapper {
     min-height: 100vh;
-    display: flex;
     flex-direction: column;
     justify-content: center;
     background: #FAFAFA;
@@ -73,4 +72,8 @@
     background: #64a2bf;
     color: #FAFAFA;
     border: 0 solid;
+}
+
+.posts-content {
+    margin-top: -2%;
 }

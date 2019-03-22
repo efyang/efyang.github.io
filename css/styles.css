@@ -125,7 +125,6 @@ main>.tagline {
     font-weight: 500;
     font-size: 3.75em;
     padding: 0px 20px 20px;
-    margin: 0 0 40px;
 }
 
 .project {
@@ -181,7 +180,6 @@ ul#skills li:hover {
 
 .about-section h1 {
     font-size: 3.75em;
-    padding: 0px 0px 20px;
     font-weight: 500;
 }
 
@@ -192,7 +190,6 @@ ul#skills li:hover {
 .about-section p {
     font-family: 'Comfortaa';
     font-weight: 400;
-    padding: 10px 0px;
     font-size: 0.75em;
 }
 
@@ -200,6 +197,7 @@ ul#skills li:hover {
     display: flex;
     align-content: center;
     justify-content: center;
+    padding: 0 0 30px;
 }
 
 .hover-link-container>a {
