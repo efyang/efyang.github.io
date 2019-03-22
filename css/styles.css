@@ -16,15 +16,31 @@ html::-webkit-scrollbar {
     /*For Chrome, Safari and Opera*/
 }
 
+.projects-content {
+    -webkit-column-count: 1;
+    -moz-column-count: 1;
+    column-count: 1;
+}
+
 @media (min-width: 576px) {
     html {
         font-size: 14px;
+    }
+    .projects-content {
+        -webkit-column-count: 1;
+        -moz-column-count: 1;
+        column-count: 1;
     }
 }
 
 @media (min-width: 768px) {
     html {
         font-size: 16px;
+    }
+    .projects-content {
+        -webkit-column-count: 2;
+        -moz-column-count: 2;
+        column-count: 2;
     }
 }
 
@@ -37,6 +53,11 @@ html::-webkit-scrollbar {
 @media (min-width: 1200px) {
     html {
         font-size: 20px;
+    }
+    .projects-content {
+        -webkit-column-count: 3;
+        -moz-column-count: 3;
+        column-count: 3;
     }
 }
 
@@ -221,11 +242,8 @@ footer {
 .projects-content {
     /* Prevent vertical gaps */
     /*line-height: 0;*/
-    -webkit-column-count: 3;
     -webkit-column-gap: 2em;
-    -moz-column-count: 3;
     -moz-column-gap: 2em;
-    column-count: 3;
     column-gap: 2em;
 }
 
