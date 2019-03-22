@@ -2,9 +2,24 @@
 {% block title %}Edward Yang's Project Blog{% endblock %}
 {% block head %}
     {{ super() }}
-
+    <link rel="stylesheet" href="css/blog.css">
 {% endblock %}
 
 {% block body %}
     {{ super() }}
+
+    <div class="posts-wrapper" id="posts">
+        <div class="posts">
+            {% with link_href="#posts", link_title="posts" %}
+                {% include "hover-link-wrapper.html" %}
+            {% endwith %}
+
+            {% for post in posts %}
+                {% with post_file=post.file, post_name=post.name, preview_text=post.preview_text %}
+                    {% include "post_preview.html" %}
+                {% endwith %}
+            {% endfor %}
+        </div>
+    </div>
+
 {% endblock %}
