@@ -1,120 +1,173 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <link rel="stylesheet"
-              href="https://fonts.googleapis.com/css?family=Comfortaa|Montserrat:500,600">
 
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<head>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Comfortaa|Montserrat:500,600">
 
-        <title>Edward Yang</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <link rel="apple-touch-icon" sizes="180x180" href="/icons/apple-touch-icon.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="/icons/favicon-16x16.png">
-        <link rel="icon" type="image/png" sizes="32x32" href="/icons/favicon-32x32.png">
-        <link rel="manifest" href="/icons/site.webmanifest">
-        <link rel="mask-icon" href="/icons/safari-pinned-tab.svg" color="#5bbad5">
-        <link rel="shortcut icon" href="/icons/favicon.ico">
-        <meta name="msapplication-TileColor" content="#da532c">
-        <meta name="msapplication-config" content="/icons/browserconfig.xml">
-        <meta name="theme-color" content="#ffffff">
+    <title>Edward Yang</title>
 
-        <!--<link href="https://fonts.googleapis.com/css?family=Reem+Kufi|Roboto:300" rel="stylesheet">-->
-        <link href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" rel="stylesheet">
-        <link rel="stylesheet" href="css/reset.css">
-        <link rel="stylesheet" href="css/styles.css">
-        <link rel="stylesheet" href="css/navbar.css">
-        <link rel="stylesheet" href="css/themes/grey-white.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="/icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/icons/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/icons/favicon-32x32.png">
+    <link rel="manifest" href="/icons/site.webmanifest">
+    <link rel="mask-icon" href="/icons/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="/icons/favicon.ico">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="msapplication-config" content="/icons/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
 
-        <link rel="dns-prefetch" href="blog.html">
-        <link rel="prefetch" href="blog.html">
-        <link rel="prerender" href="blog.html">
-    </head>
-    <body>
-        <navbar>
+    <!--<link href="https://fonts.googleapis.com/css?family=Reem+Kufi|Roboto:300" rel="stylesheet">-->
+    <link href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/themes/grey-white.css">
+
+    <link rel="dns-prefetch" href="blog.html">
+    <link rel="prefetch" href="blog.html">
+    <link rel="prerender" href="blog.html">
+</head>
+
+<body>
+    <navbar>
         <ul>
             <li><a href="#home">home</a></li>
             <li><a href="#projects">projects</a></li>
             <li><a href="#about">about</a></li>
             <li><a id="blog" href="blog.html">blog</a></li>
         </ul>
-        </navbar>
+    </navbar>
 
-        <main id="home">
-            <div class="intro">Hi, I'm Edward!</div>
-            <div class="tagline"><font color=#fff176>student</font> | <font color=#29b6f6>developer</font> | <font color=#ff6f00>rustacean</font></div>
-            <!-- Find your icons from here - https://fontawesome.com/icons?d=gallery&s=brands -->
-            <div class="icons-social">
-                <a target="_blank" href="mailto:edward.yang6771@gmail.com"><i class="far fa-envelope"></i></a>
-                <a target="_blank" href="https://github.com/efyang"><i class="fab fa-github"></i></a>
-                <a target="_blank" href="https://www.linkedin.com/in/efyang"><i class="fab fa-linkedin"></i></a>
+    <main id="home">
+        <div class="intro">Hi, I'm Edward!</div>
+        <div class="tagline">
+            <font color=#fff176>student</font> |
+            <font color=#29b6f6>developer</font> |
+            <font color=#ff6f00>rustacean</font>
+        </div>
+        <!-- Find your icons from here - https://fontawesome.com/icons?d=gallery&s=brands -->
+        <div class="icons-social">
+            <a target="_blank" href="mailto:edward.yang6771@gmail.com"><i class="far fa-envelope"></i></a>
+            <a target="_blank" href="https://github.com/efyang"><i class="fab fa-github"></i></a>
+            <a target="_blank" href="https://www.linkedin.com/in/efyang"><i class="fab fa-linkedin"></i></a>
+        </div>
+    </main>
+
+    <div class="projects-wrapper" id="projects">
+        <div class="projects">
+            <div class="hover-link-container">
+                <a href="#projects">
+                    <div class="link-wrapper" style="display: flex;">
+                        <div class="link-img-wrapper">
+                            <img class="link-img" src="octicons/link.svg"></img>
+                        </div>
+                        <h1>projects</h1>
+                    </div>
+                </a>
+                <!-- spacer element -->
+                <img class="link-img" src="octicons/link.svg" style="visibility:hidden;"></img>
             </div>
-        </main>
 
-        <div class="projects-wrapper" id="projects">
-            <div class="projects">
-                <div class="projects-section">
-                    <div class="hover-link-container">
-                        <a href="#projects">
-                            <div class="link-wrapper" style="display: flex;">
-                                <div class="link-img-wrapper">
-                                    <img class="link-img" src="octicons/link.svg"></img>
-                                </div>
-                                <h1>projects</h1>
-                            </div>
-                        </a>
-                        <!-- spacer element -->
-                        <img class="link-img" src="octicons/link.svg" style="visibility:hidden;"></img>
-                    </div>
+            <div class="projects-content">
+                <div class="project">
+                    <h2>project 1</h2>
+                    <p>lorem ipsum dolor sit amet, consectetur adipiscing elit. sed enim ex, pharetra sed lorem in, accumsan dapibus elit. aliquam erat volutpat. cras consequat erat enim, eu varius metus tempor et. sed varius tempor libero vel mattis. nostra,
+                        per inceptos himenaeos. proin aliquam libero eget odio ultrices egestas. nullam consectetur tincidunt tellus sed fringilla.</p>
 
-                    <div class="project">
-                        <h2>project 1</h2>
-                        <p>lorem ipsum dolor sit amet, consectetur adipiscing elit. sed enim ex, pharetra sed lorem in, accumsan dapibus elit. aliquam erat volutpat. cras consequat erat enim, eu varius metus tempor et. sed varius tempor libero vel mattis. cras lacinia venenatis erat, et sollicitudin elit imperdiet in. suspendisse vel commodo libero. nullam dui odio, rutrum non imperdiet sit amet, malesuada eget ipsum. quisque dictum sit amet lorem non efficitur. integer viverra fringilla nunc, vel rhoncus lectus congue ut. nullam non consequat nibh. vestibulum rutrum leo a nulla suscipit condimentum. nam blandit imperdiet sapien ac imperdiet. class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. proin aliquam libero eget odio ultrices egestas. nullam consectetur tincidunt tellus sed fringilla.</p>
-
-                        <ul id="skills">
-                            <li>HTML</li>
-                            <li>CSS</li>
-                        </ul>
-                    </div>
-
-                    <div class="project">
-                        <h2>project 2</h2>
-                        <p>lorem ipsum dolor sit amet, consectetur adipiscing elit. sed enim ex, pharetra sed lorem in, accumsan dapibus elit. aliquam erat volutpat. cras consequat erat enim, eu varius metus tempor et. sed varius tempor libero vel mattis. cras lacinia venenatis erat, et sollicitudin elit imperdiet in. suspendisse vel commodo libero. nullam dui odio, rutrum non imperdiet sit amet, malesuada eget ipsum. quisque dictum sit amet lorem non efficitur. integer viverra fringilla nunc, vel rhoncus lectus congue ut. nullam non consequat nibh. vestibulum rutrum leo a nulla suscipit condimentum. nam blandit imperdiet sapien ac imperdiet. class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. proin aliquam libero eget odio ultrices egestas. nullam consectetur tincidunt tellus sed fringilla.</p>
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/3/3e/ThomasDiggesmap.JPG" width=300px height=300px>
-                        <p>lorem ipsum dolor sit amet, consectetur adipiscing elit. sed enim ex, pharetra sed lorem in, accumsan dapibus elit. aliquam erat volutpat. cras consequat erat enim, eu varius metus tempor et. sed varius tempor libero vel mattis. cras lacinia venenatis erat, et sollicitudin elit imperdiet in. suspendisse vel commodo libero. nullam dui odio, rutrum non imperdiet sit amet, malesuada eget ipsum. quisque dictum sit amet lorem non efficitur. integer viverra fringilla nunc, vel rhoncus lectus congue ut. nullam non consequat nibh. vestibulum rutrum leo a nulla suscipit condimentum. nam blandit imperdiet sapien ac imperdiet. class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. proin aliquam libero eget odio ultrices egestas. nullam consectetur tincidunt tellus sed fringilla.</p>
-                    </div>
-
+                    <ul id="skills">
+                        <li>HTML</li>
+                        <li>CSS</li>
+                    </ul>
                 </div>
-            </div>
 
-            <div class="about-wrapper" id="about">
-                <div class="about-section">
-                    <div class="hover-link-container">
-                        <a href="#about">
-                            <div class="link-wrapper" style="display: flex;">
-                                <div class="link-img-wrapper">
-                                    <img class="link-img" src="octicons/link.svg"></img>
-                                </div>
-                                <h1>about me</h1>
-                            </div>
-                        </a>
-                        <!-- spacer element -->
-                        <img class="link-img" src="octicons/link.svg" style="visibility:hidden;"></img>
-                    </div>
-                    <p>lorem ipsum dolor sit amet, consectetur adipiscing elit. sed enim ex, pharetra sed lorem in, accumsan dapibus elit. aliquam erat volutpat. cras consequat erat enim, eu varius metus tempor et. sed varius tempor libero vel mattis. cras lacinia venenatis erat, et sollicitudin elit imperdiet in. suspendisse vel commodo libero. nullam dui odio, rutrum non imperdiet sit amet, malesuada eget ipsum. quisque dictum sit amet lorem non efficitur. integer viverra fringilla nunc, vel rhoncus lectus congue ut. nullam non consequat nibh. vestibulum rutrum leo a nulla suscipit condimentum. nam blandit imperdiet sapien ac imperdiet. class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. proin aliquam libero eget odio ultrices egestas. nullam consectetur tincidunt tellus sed fringilla.</p>
+                <div class="project">
+                    <h2>project 2</h2>
+                    <p>lorem ipsum dolor sit amet, consectetur adipiscing elit. sed enim ex, pharetra sed lorem in, accumsan dapibus elit. aliquam erat volutpat. cras consequat erat enim, eu varius metus tempor et. sed varius tempor libero vel mattis. fringilla
+                        nunc, vel rhoncus lectus congue ut. nullam non consequat nibh. vestibulum rutrum leo a nulla suscipit condimentum. nam blandit imperdiet sapien ac imperdiet. class aptent taciti sociosqu ad litora torquent per conubia nostra, per
+                        inceptos himenaeos. proin aliquam libero eget odio ultrices egestas. nullam consectetur tincidunt tellus sed fringilla.</p>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/3/3e/ThomasDiggesmap.JPG" width=300px height=300px>
+                    <p>lorem ipsum dolor sit amet, consectetur adipiscing elit. sed enim ex, pharetra sed lorem in, accumsan dapibus elit. aliquam erat volutpat. cras consequat erat enim, eu varius metus tempor et. sed varius tempor libero vel mattis. cras
+                        lacinia venenatis erat, et sollicitudin elit imperdiet in. suspendisse vel commodo libero. nullam dui odio, rutrum non imperdiet sit amet, malesuada eget ipsum. quisque dictum sit amet lorem non efficitur. integer viverra fringilla
+                        nunc, vel rhoncus lectus congue ut. nullam non consequat nibh. vestibulum rutrum leo a nulla suscipit condimentum. nam blandit imperdiet sapien ac imperdiet. class aptent taciti sociosqu ad litora torquent per conubia nostra, per
+                        inceptos himenaeos. proin aliquam libero eget odio ultrices egestas. nullam consectetur tincidunt tellus sed fringilla.</p>
+                </div>
 
-                    <p>Thanks for stopping by!</p>
+                <div class="project">
+                    <h2>project 3</h2>
+                    <p>lorem ipsum dolor sit amet, consectetur adipiscing elit. sed enim ex, pharetra sed lorem in, accumsan dapibus elit. aliquam erat volutpat. cras consequat erat enim, eu varius metus tempor et. sed varius tempor libero vel mattis. cras
+                        lacinia venenatis erat, et sollicitudin elit imperdiet in. suspendisse vel commodo libero. nullam dui odio, rutrum non imperdiet sit amet, malesuada eget ipsum. quisque dictum sit amet lorem non efficitur. integer viverra fringilla
+                        nunc, vel rhoncus lectus congue ut. nullam non consequat nibh. vestibulum rutrum leo a nulla suscipit condimentum. nam blandit imperdiet sapien ac imperdiet. class aptent taciti sociosqu ad litora torquent per conubia nostra, per
+                        inceptos himenaeos. proin aliquam libero eget odio ultrices egestas. nullam consectetur tincidunt tellus sed fringilla.</p>
 
-                    <ul>
-                        <li>Email: </li>
-                        <li>LinkedIn: </li>
+                    <ul id="skills">
+                        <li>HTML</li>
+                        <li>CSS</li>
+                    </ul>
+                </div>
+
+                <div class="project">
+                    <h2>project 4</h2>
+                    <p>lorem ipsum dolor sit amet, consectetur adipiscing elit. sed enim ex, pharetra sed lorem in, accumsan dapibus elit. aliquam erat volutpat. cras consequat erat enim, eu varius metus tempor et. sed varius tempor libero vel mattis. cras
+                        lacinia venenatis erat, et sollicitudin elit imperdiet in. suspendisse vel commodo libero. nullam dui odio, rutrum non imperdiet sit amet, malesuada eget ipsum. quisque dictum sit amet lorem non efficitur. integer viverra fringilla
+                        nunc, vel rhoncus lectus congue ut. nullam non consequat nibh. vestibulum rutrum leo a nulla suscipit condimentum. nam blandit imperdiet sapien ac imperdiet. class aptent taciti sociosqu ad litora torquent per conubia nostra, per
+                        inceptos himenaeos. proin aliquam libero eget odio ultrices egestas. nullam consectetur tincidunt tellus sed fringilla.</p>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/3/3e/ThomasDiggesmap.JPG" width=300px height=300px>
+                    <p>lorem ipsum dolor sit amet, consectetur adipiscing elit. sed enim ex, pharetra sed lorem in, accumsan dapibus elit. aliquam erat volutpat. cras consequat erat enim, eu varius metus tempor et. sed varius tempor libero vel mattis. nostra,
+                        per inceptos himenaeos. proin aliquam libero eget odio ultrices egestas. nullam consectetur tincidunt tellus sed fringilla.</p>
+                </div>
+
+                <div class="project">
+                    <h2>project 5</h2>
+                    <p>lorem ipsum dolor sit amet, consectetur adipiscing elit. sed enim ex, pharetra sed lorem in, accumsan dapibus elit. aliquam erat volutpat. cras consequat erat enim, eu varius metus tempor et. sed varius tempor libero vel mattis. cras
+                        lacinia venenatis erat, et sollicitudin elit imperdiet in. suspendisse vel commodo libero. nullam dui odio, rutrum non imperdiet sit amet, malesuada eget ipsum. quisque dictum sit amet lorem non efficitur. integer viverra fringilla
+                        nunc, vel rhoncus lectus congue ut. nullam non consequat nibh. vestibulum rutrum leo a nulla suscipit condimentum. nam blandit imperdiet sapien ac imperdiet. class aptent taciti sociosqu ad litora torquent per conubia nostra, per
+                        inceptos himenaeos. proin aliquam libero eget odio ultrices egestas. nullam consectetur tincidunt tellus sed fringilla.</p>
+
+                    <p>nullam non consequat nibh. vestibulum rutrum leo a nulla suscipit condimentum. nam blandit imperdiet sapien ac imperdiet. class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. proin aliquam libero
+                        eget odio ultrices egestas. nullam consectetur tincidunt tellus sed fringilla.</p>
+                    <ul id="skills">
+                        <li>HTML</li>
+                        <li>CSS</li>
                     </ul>
                 </div>
             </div>
-    </body>
+        </div>
+    </div>
+    <div class="about-wrapper" id="about">
+        <div class="about-section">
+            <div class="hover-link-container">
+                <a href="#about">
+                    <div class="link-wrapper" style="display: flex;">
+                        <div class="link-img-wrapper">
+                            <img class="link-img" src="octicons/link.svg"></img>
+                        </div>
+                        <h1>about me</h1>
+                    </div>
+                </a>
+                <!-- spacer element -->
+                <img class="link-img" src="octicons/link.svg" style="visibility:hidden;"></img>
+            </div>
+            <p>lorem ipsum dolor sit amet, consectetur adipiscing elit. sed enim ex, pharetra sed lorem in, accumsan dapibus elit. aliquam erat volutpat. cras consequat erat enim, eu varius metus tempor et. sed varius tempor libero vel mattis. cras lacinia
+                venenatis erat, et sollicitudin elit imperdiet in. suspendisse vel commodo libero. nullam dui odio, rutrum non imperdiet sit amet, malesuada eget ipsum. quisque dictum sit amet lorem non efficitur. integer viverra fringilla nunc, vel rhoncus
+                lectus congue ut. nullam non consequat nibh. vestibulum rutrum leo a nulla suscipit condimentum. nam blandit imperdiet sapien ac imperdiet. class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. proin
+                aliquam libero eget odio ultrices egestas. nullam consectetur tincidunt tellus sed fringilla.</p>
 
-    <footer>
-        <p>(mostly) built from scratch by edward yang © 2019</p>
-    </footer>
+            <p>Thanks for stopping by!</p>
+
+            <ul>
+                <li>Email: </li>
+                <li>LinkedIn: </li>
+            </ul>
+        </div>
+    </div>
+</body>
+
+<footer>
+    <p>(mostly) built from scratch by edward yang © 2019</p>
+</footer>
+
 </html>

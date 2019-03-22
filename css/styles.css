@@ -5,12 +5,15 @@ html {
 }
 
 html {
-    scrollbar-width: none; /*For Firefox*/
-    -ms-overflow-style: none; /*For IE and Edge*/
+    scrollbar-width: none;
+    /*For Firefox*/
+    -ms-overflow-style: none;
+    /*For IE and Edge*/
 }
 
 html::-webkit-scrollbar {
-    width: 0px; /*For Chrome, Safari and Opera*/
+    width: 0px;
+    /*For Chrome, Safari and Opera*/
 }
 
 @media (min-width: 576px) {
@@ -41,6 +44,7 @@ html::-webkit-scrollbar {
     font-size: 3em;
 }
 
+
 /* Custom Styles */
 
 main {
@@ -58,7 +62,7 @@ main {
     font-weight: 600;
 }
 
-main > .tagline {
+main>.tagline {
     font-family: 'Comfortaa', sans-serif;
     font-size: 1.3rem;
     margin: 1.5rem 0;
@@ -75,23 +79,22 @@ main > .tagline {
 
 .devto svg {
     margin-bottom: -0.20rem;
-    margin-left: 0.675rem;;
+    margin-left: 0.675rem;
+    ;
     width: 2.65rem;
     height: 2.65rem;
 }
 
 .projects-wrapper {
     min-height: 100vh;
-    display: flex;
-    flex-direction: column;
     justify-content: center;
     background: #FAFAFA;
+    padding: 80px 30px 0px;
 }
 
 .projects {
-    padding: 80px 30px;
     margin: auto;
-    width: 85%;
+    width: 95%;
     color: #485564;
     text-align: center;
 }
@@ -100,25 +103,28 @@ main > .tagline {
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
     font-size: 3.75em;
-    padding: 0px 0px 20px;
+    padding: 0px 20px 20px;
+    margin: 0 0 40px;
 }
 
 .project {
     font-family: 'Comfortaa', sans-serif;
+    display: inline-block;
 }
 
 .project h2 {
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
-    font-size: 2.5em;
-    padding: 20px 0px 15px;
+    font-size: 2em;
 }
 
-.project > p {
+.project p {
     padding: 10px 0px;
+    height: 100%;
+    font-size: 0.75em;
 }
 
-.project > ul {
+.project>ul {
     padding: 10px 0px 0px;
 }
 
@@ -145,7 +151,7 @@ ul#skills li:hover {
 .about-section {
     padding: 80px 30px;
     margin: auto;
-    width: 85%;
+    width: 90%;
     color: #485564;
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
@@ -156,10 +162,9 @@ ul#skills li:hover {
     font-size: 3.75em;
     padding: 0px 0px 20px;
     font-weight: 500;
-
 }
 
-.about-section > ul {
+.about-section>ul {
     padding: 30px 0px 0px;
 }
 
@@ -167,6 +172,7 @@ ul#skills li:hover {
     font-family: 'Comfortaa';
     font-weight: 400;
     padding: 10px 0px;
+    font-size: 0.75em;
 }
 
 .hover-link-container {
@@ -175,7 +181,7 @@ ul#skills li:hover {
     justify-content: center;
 }
 
-.hover-link-container > a {
+.hover-link-container>a {
     color: inherit;
     text-decoration: inherit;
 }
@@ -207,8 +213,29 @@ footer {
     margin: auto;
     text-align: center;
     width: 100%;
-
     padding: 0.8%;
     color: #FAFAFA;
     background-color: #333;
+}
+
+.projects-content {
+    /* Prevent vertical gaps */
+    /*line-height: 0;*/
+    -webkit-column-count: 3;
+    -webkit-column-gap: 2em;
+    -moz-column-count: 3;
+    -moz-column-gap: 2em;
+    column-count: 3;
+    column-gap: 2em;
+}
+
+.project {
+    /* Just in case there are inline attributes */
+    width: 100% !important;
+    height: auto !important;
+    background-color: #eee;
+    padding: 1em;
+    border-radius: 20px;
+    margin: 0 0 1em;
+    break-inside: avoid;
 }

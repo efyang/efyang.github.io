@@ -24,12 +24,13 @@
 .post {
     background: #e6edf2;
     font-family: 'Comfortaa', sans-serif;
+    font-size: 0.75em;
     padding: 1.5% 3% 2.5%;
     margin: 2%;
     border-radius: 1em;
 }
 
-.post > h2 {
+.post>h2 {
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
     font-size: 2.5em;
@@ -40,16 +41,16 @@
     padding: 2% 0 0;
 }
 
-.post > a {
+.post>a {
     text-decoration: inherit;
     color: inherit;
 }
 
-.post > h2:hover {
+.post>h2:hover {
     color: #64a2bf;
 }
 
-.post > h2 > a {
+.post>h2>a {
     text-decoration: inherit;
     color: inherit;
 }
