@@ -254,4 +254,9 @@ footer {
     border-radius: 20px;
     margin: 0 0 1em;
     break-inside: avoid;
+    transition: 0.3s;
+}
+
+.project:hover {
+    background-color: rgb(228, 228, 228);
 }
