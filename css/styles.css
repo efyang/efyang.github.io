@@ -148,14 +148,14 @@ main>.tagline {
 ul#skills li {
     display: inline;
     border-radius: 25px;
-    background: #b3e5fc;
     padding: 0.5em 0.6em 0.4em;
     transition: 0.3s;
+    background: #b3e5fc;
     font-size: 0.8em;
 }
 
 ul#skills li:hover {
-    background-color: #81d4fa;
+    background: #dbf3ff;
 }
 
 .about-wrapper {
@@ -288,4 +288,30 @@ footer {
 
 .project:hover {
     background-color: rgb(228, 228, 228);
+}
+
+.project-src-links {
+    font-size: 1em;
+    display: inline-block;
+    padding: 0.2em 0.5em;
+    margin: -0.2em 0 0.5em;
+    border-radius: 1em;
+    background: white;
+    transition: 0.3s;
+}
+
+.project-src-links a {
+    color: #485564;
+}
+
+.project-src-links a svg path{
+    fill: #485564;
+}
+
+.project:hover .project-src-links {
+    background: #f3f3f3;
+}
+
+.project:hover .project-src-links:hover {
+    background: white;
 }
