@@ -6,9 +6,9 @@
 }
 
 .posts {
-    padding: 80px 0;
+    padding: 3em 1% 0px;
     margin: auto;
-    width: 90%;
+    width: 95%;
     color: #485564;
     text-align: center;
     font-family: 'Montserrat', sans-serif;
@@ -24,9 +24,9 @@
     background: #e6edf2;
     font-family: 'Comfortaa', sans-serif;
     font-size: 0.75em;
-    padding: 1.5% 3% 2.5%;
-    margin: 2%;
-    border-radius: 1em;
+    padding: 1em 2em 1.5em;
+    margin: 2em;
+    border-radius: 2em;
     transition: 0.3s;
 }
 
@@ -42,7 +42,7 @@
 }
 
 .post p {
-    padding: 2% 0 0;
+    padding: 1em 0 0;
 }
 
 .post>a {
@@ -60,7 +60,7 @@
 }
 
 .continue-button-wrapper {
-    padding: 2% 0 0;
+    padding: 1.5em 0 0;
     width: 100%;
 }
 
@@ -80,5 +80,5 @@
 }
 
 .posts-content {
-    margin-top: -2%;
+    margin-top: -1.5em;
 }

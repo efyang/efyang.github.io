@@ -31,6 +31,7 @@ html::-webkit-scrollbar {
         -moz-column-count: 1;
         column-count: 1;
     }
+
 }
 
 @media (min-width: 768px) {
@@ -110,7 +111,7 @@ main>.tagline {
     min-height: 100vh;
     justify-content: center;
     background: #FAFAFA;
-    padding: 80px 30px 0px;
+    padding: 3em 2% 0px;
 }
 
 .projects {
@@ -124,7 +125,7 @@ main>.tagline {
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
     font-size: 3.75em;
-    padding: 0px 20px 20px;
+    padding: 0px 1em 1em;
 }
 
 .project {
@@ -169,7 +170,7 @@ ul#skills li:hover {
 }
 
 .about-section {
-    padding: 80px 30px;
+    padding: 3em 2em 0px;
     margin: auto;
     width: 90%;
     color: #485564;
@@ -197,7 +198,7 @@ ul#skills li:hover {
     display: flex;
     align-content: center;
     justify-content: center;
-    padding: 0 0 30px;
+    padding: 0 0 1em;
 }
 
 .hover-link-container>a {
@@ -232,7 +233,7 @@ footer {
     margin: auto;
     text-align: center;
     width: 100%;
-    padding: 0.8%;
+    padding: 1.25em;
     color: #FAFAFA;
     background-color: #333;
 }
@@ -251,7 +252,7 @@ footer {
     height: auto !important;
     background-color: #eee;
     padding: 1em;
-    border-radius: 20px;
+    border-radius: 2em;
     margin: 0 0 1em;
     break-inside: avoid;
     transition: 0.3s;
