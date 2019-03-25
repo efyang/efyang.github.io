@@ -80,8 +80,8 @@ main {
 
 .intro {
     font-family: 'Montserrat', sans-serif;
-    font-size: 3.75em;
-    font-weight: 600;
+    font-size: 4.5em;
+    font-weight: 300;
 }
 
 main>.tagline {
@@ -123,8 +123,8 @@ main>.tagline {
 
 .projects h1 {
     font-family: 'Montserrat', sans-serif;
-    font-weight: 500;
-    font-size: 3.75em;
+    font-weight: 300;
+    font-size: 4em;
     padding: 0px 1em 1em;
 }
 
@@ -135,14 +135,15 @@ main>.tagline {
 
 .project h2 {
     font-family: 'Montserrat', sans-serif;
-    font-weight: 500;
-    font-size: 2em;
+    font-weight: 300;
+    font-size: 2.25em;
 }
 
 .project p {
     padding: 1em 0.5em;
     height: 100%;
     font-size: 0.75em;
+    font-weight: 300;
 }
 
 ul#skills li {
@@ -172,13 +173,13 @@ ul#skills li:hover {
     width: 90%;
     color: #485564;
     font-family: 'Montserrat', sans-serif;
-    font-weight: 500;
+    font-weight: 300;
     text-align: center;
 }
 
 .about-section h1 {
-    font-size: 3.75em;
-    font-weight: 500;
+    font-size: 4em;
+    font-weight: 300;
 }
 
 .about-section>ul {
@@ -187,7 +188,7 @@ ul#skills li:hover {
 
 .about-section p {
     font-family: 'Comfortaa';
-    font-weight: 400;
+    font-weight: 300;
     font-size: 0.75em;
 }
 
@@ -278,16 +279,17 @@ footer {
     /* Just in case there are inline attributes */
     width: 100% !important;
     height: auto !important;
-    background-color: #eee;
+    background-color: #FAFAFA;
     padding: 1em;
-    border-radius: 2em;
+    border-radius: 1em;
     margin: 0 0 1em;
     break-inside: avoid;
     transition: 0.3s;
+    box-shadow: 0 0 1em 0.2em #eee;
 }
 
 .project:hover {
-    background-color: rgb(228, 228, 228);
+    box-shadow: 0 0 0.5em 0.1em #e6e6e6;
 }
 
 .project-src-links {
@@ -298,6 +300,7 @@ footer {
     border-radius: 1em;
     background: white;
     transition: 0.3s;
+    box-shadow: 0 0 1em 0.1em #eee;
 }
 
 .project-src-links a {
@@ -308,10 +311,6 @@ footer {
     fill: #485564;
 }
 
-.project:hover .project-src-links {
-    background: #f3f3f3;
-}
-
-.project:hover .project-src-links:hover {
-    background: white;
+.project-src-links:hover {
+    box-shadow: 0 0 1em 0.1em #e6e6e6;
 }
