@@ -1,0 +1,30 @@
+<div class="project">
+    <a class="project-anchor" id="{{ project_href }}"></a>
+    <div class="project-hover-link-container">
+        {% with link_href=project_href, link_title=project_name}
+            {% include "project-hover-link-container.html"}
+        {% endwith %}
+    </div>
+
+    {{ project_body }}
+
+    {% if project_github is defined or project_document is defined %}
+        <div class="project-src-links">
+            {% if project_github is defined %}
+            <a target="_blank" href="{{project_github}}"><i class="fab fa-github"></i></a>
+            {% endif %}
+            {% if project_document is defined %}
+            <a target="_blank" href="{{project_document}}"><i class="fas fa-file-alt"></i></a>
+            {% endif %}
+        </div>
+    {% endif %}
+
+    {% if skills|length > 0 %}
+        <ul id="skills">
+            {% for skill in skills %}
+            <li>{{ skill }}</li>
+            {% endfor %}
+        </ul>
+    {% endif %}
+</div>
+

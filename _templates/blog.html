@@ -13,12 +13,13 @@
             {% with link_href="#posts", link_title="posts" %}
                 {% include "hover-link-wrapper.html" %}
             {% endwith %}
-
-            {% for post in posts %}
-                {% with post_file=post.file, post_name=post.name, preview_text=post.preview_text %}
-                    {% include "post_preview.html" %}
-                {% endwith %}
-            {% endfor %}
+            <div class="posts-content">
+                {% for post in posts %}
+                    {% with post_file=post.file, post_name=post.name, preview_text=post.preview_text %}
+                        {% include "post_preview.html" %}
+                    {% endwith %}
+                {% endfor %}
+            </div>
         </div>
     </div>
 
