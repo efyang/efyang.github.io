@@ -102,16 +102,72 @@ main>.tagline {
 .devto svg {
     margin-bottom: -0.20rem;
     margin-left: 0.675rem;
-    ;
     width: 2.65rem;
     height: 2.65rem;
 }
+
+.continue-scroll i {
+    font-size: 2em;
+    transition: 0.5s ease-in-out;
+}
+
+.continue-scroll a {
+    color: #aaa;
+    transition: 0.3s;
+}
+
+.continue-scroll a:hover {
+    color: #FFFFFF;
+}
+
+.continue-scroll i:hover {
+    transform: rotate3d(0, 1, 0, 180deg)
+}
+
+.continue-scroll {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    padding: 0 0 1em;
+}
+
+.continue-scroll-b i {
+    font-size: 2em;
+    transition: 0.5s ease-in-out;
+}
+
+.continue-scroll-b a {
+    color: #999;
+    transition: 0.3s;
+}
+
+.continue-scroll-b a:hover {
+    color: #555;
+}
+
+.continue-scroll-b i:hover {
+    transform: rotate3d(0, 1, 0, 180deg)
+}
+
+.continue-scroll-b {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    padding: 0 0 1em;
+}
+
+
 
 .projects-wrapper {
     min-height: 100vh;
     justify-content: center;
     background: #FAFAFA;
-    padding: 3em 2% 0px;
+    padding: 3em 2% 3em;
+    position: relative;
 }
 
 .projects {
@@ -285,7 +341,7 @@ footer {
     margin: 0 0 1em;
     break-inside: avoid;
     transition: 0.3s;
-    box-shadow: 0 0 1em 0.2em #eee;
+    box-shadow: 0 0 0.5em 0.1em #eee;
 }
 
 .project:hover {
