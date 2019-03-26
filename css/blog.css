@@ -60,6 +60,17 @@
     color: inherit;
 }
 
+.post>h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1em;
+    font-weight: 400;
+}
+
+.post>h3>a {
+    text-decoration: inherit;
+    color: inherit;
+}
+
 .continue-button-wrapper {
     padding: 1.5em 0 0;
     width: 100%;

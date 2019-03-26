@@ -327,15 +327,15 @@ footer {
     height: auto !important;
     background-color: #FAFAFA;
     padding: 1em;
-    border-radius: 1em;
+    border-radius: 0.5em;
     margin: 1em 0 1em;
     break-inside: avoid;
     transition: 0.3s;
-    box-shadow: 0 0 0.5em 0.1em #eee;
+    border: 1px solid #999;
 }
 
 .project:hover {
-    box-shadow: 0 0 0.5em 0.1em #e6e6e6;
+    border: 1px solid #666;
 }
 
 .project-src-links {
@@ -344,9 +344,9 @@ footer {
     padding: 0.2em 0.5em;
     margin: -0.2em 0 0.5em;
     border-radius: 1em;
-    background: white;
+    background: #FAFAFA;
     transition: 0.3s;
-    border: 1px solid #ddd;
+    border: 1px solid #999;
 }
 
 .project-src-links a {
@@ -358,5 +358,5 @@ footer {
 }
 
 .project-src-links:hover {
-    border: 1px solid #aaa;
+    border: 1px solid #666;
 }
