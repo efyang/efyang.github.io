@@ -21,17 +21,17 @@
 }
 
 .post {
-    background: #e6edf2;
+    background: white;
     font-family: 'Comfortaa', sans-serif;
     font-size: 0.75em;
     padding: 1em 2em 1.5em;
     margin: 1em;
-    border-radius: 1em;
     transition: 0.3s;
+    box-shadow: 0 0 0.1em 0.1em #f2f2f2;
 }
 
 .post:hover {
-    background: #dae6ee;
+    box-shadow: 0 0 0.1em 0.15em #f0f0f0;
 }
 
 .post>h2 {
@@ -86,9 +86,8 @@
 }
 
 .continue-button:hover {
-    background: #64a2bf;
-    color: #FAFAFA;
-    border: 0 solid;
+    color: #64a2bf;
+    border: 1px solid #64a2bf;
 }
 
 .posts-content {

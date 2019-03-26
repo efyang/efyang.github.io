@@ -153,7 +153,7 @@ main>.tagline {
 .projects-wrapper {
     min-height: 100vh;
     justify-content: center;
-    background: #e9eef2;
+    background: #FAFAFA;
     padding: 3em 2% 3em;
     position: relative;
 }
@@ -325,16 +325,16 @@ footer {
     /* Just in case there are inline attributes */
     width: 100% !important;
     height: auto !important;
-    background-color: #FAFAFA;
+    background-color: white;
     padding: 1em;
-    border-radius: 1em;
     margin: 1em 0 1em;
     break-inside: avoid;
     transition: 0.3s;
+    box-shadow: 0 0 0.1em 0.1em #f2f2f2;
 }
 
 .project:hover {
-    background-color: white;
+    box-shadow: 0 0 0.1em 0.15em #f0f0f0;
 }
 
 .project-src-links {
@@ -343,9 +343,9 @@ footer {
     padding: 0.2em 0.5em;
     margin: -0.2em 0 0.5em;
     border-radius: 1em;
-    background: #FAFAFA;
+    background: #white;
     transition: 0.3s;
-    border: 1px solid #aaa;
+    border: 1px solid #ddd;
 }
 
 .project-src-links a {
@@ -357,7 +357,7 @@ footer {
 }
 
 .project-src-links:hover {
-    border: 1px solid #888;
+    border: 1px solid #ccc;
 }
 
 .project:hover .project-src-links {
