@@ -82,6 +82,7 @@
 
 .posts-content {
     margin-top: -0.5em;
+    padding-top: 1em;
     display: inline-grid;
 }
 

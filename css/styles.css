@@ -231,6 +231,7 @@ ul#skills li:hover {
 }
 
 .about-section p {
+    padding-top: 1em;
     font-family: 'Comfortaa';
     font-weight: 300;
     font-size: 0.75em;
@@ -240,7 +241,7 @@ ul#skills li:hover {
     display: flex;
     align-content: center;
     justify-content: center;
-    padding: 0 0 1em;
+    padding: 0 0 0em;
 }
 
 .hover-link-container>a {
@@ -312,6 +313,7 @@ footer {
 }
 
 .projects-content {
+    margin-top: 1em;
     /* Prevent vertical gaps */
     /*line-height: 0;*/
     -webkit-column-gap: 2em;
@@ -326,7 +328,7 @@ footer {
     background-color: #FAFAFA;
     padding: 1em;
     border-radius: 1em;
-    margin: 0 0 1em;
+    margin: 1em 0 1em;
     break-inside: avoid;
     transition: 0.3s;
     box-shadow: 0 0 0.5em 0.1em #eee;
@@ -344,7 +346,7 @@ footer {
     border-radius: 1em;
     background: white;
     transition: 0.3s;
-    box-shadow: 0 0 1em 0.1em #eee;
+    border: 1px solid #ddd;
 }
 
 .project-src-links a {
@@ -356,5 +358,5 @@ footer {
 }
 
 .project-src-links:hover {
-    box-shadow: 0 0 1em 0.1em #e6e6e6;
+    border: 1px solid #aaa;
 }
