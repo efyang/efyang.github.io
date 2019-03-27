@@ -63,8 +63,9 @@
 }
 
 .post>hr#preview-sep {
-    margin: 1em 5em 0;
+    margin: 1em auto 0;
     color: #48556454;
+    width: 65%;
 }
 
 .post>h3 {
