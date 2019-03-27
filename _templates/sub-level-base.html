@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        {% include "sub-level-imports.html" %}
+        <title>{% block title %}{% endblock %}</title>
+
+        {% block head %}{% endblock %}
+    </head>
+    <body>
+        {% include "sub-level-navbar.html" %}
+        {% block body %}{% endblock %}
+    </body>
+    {% include "footer.html" %}
+</html>

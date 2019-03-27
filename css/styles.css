@@ -363,3 +363,8 @@ footer {
 .project:hover .project-src-links {
     background: white;
 }
+
+.project>hr#project-sep-top {
+    margin: 0.5em 1em 0;
+    color: #485564cc;
+}

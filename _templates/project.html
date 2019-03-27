@@ -1,10 +1,12 @@
 <div class="project">
     <a class="project-anchor" id="{{ project_href }}"></a>
     <div class="project-hover-link-container">
-        {% with link_href=project_href, link_title=project_name}
-            {% include "project-hover-link-container.html"}
+        {% with link_href='#'~project_href, link_title=project_name %}
+            {% include "project-hover-link-container.html" %}
         {% endwith %}
     </div>
+
+    <hr id="project-sep-top">
 
     {{ project_body }}
 
@@ -19,12 +21,11 @@
         </div>
     {% endif %}
 
-    {% if skills|length > 0 %}
+    {% if project_skills is defined %}
         <ul id="skills">
-            {% for skill in skills %}
+            {% for skill in project_skills %}
             <li>{{ skill }}</li>
             {% endfor %}
         </ul>
     {% endif %}
 </div>
-

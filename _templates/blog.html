@@ -15,7 +15,7 @@
             {% endwith %}
             <div class="posts-content">
                 {% for post in posts %}
-                    {% with post_file=post.file, post_name=post.name, preview_text=post.preview_text %}
+                    {% with post_file=post.post_file(), post_title=post.title, preview_text=post.preview_text(), post_time=post.formatted_date() %}
                         {% include "post_preview.html" %}
                     {% endwith %}
                 {% endfor %}
