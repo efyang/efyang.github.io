@@ -28,6 +28,7 @@
     margin: 1em;
     transition: 0.3s;
     box-shadow: 0 0 0.1em 0.1em #f2f2f2;
+    border-radius: 0.5em;
 }
 
 .post:hover {
@@ -42,8 +43,9 @@
 }
 
 .post p {
-    padding: 1em 0 0;
+    padding: 1em 1.5em 0;
     font-weight: 300;
+    text-align: left;
 }
 
 .post>a {
