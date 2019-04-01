@@ -10,18 +10,18 @@
 
     {{ project_body }}
 
-    {% if project_github is defined or project_document is defined %}
+    {% if project_github is not none or project_document is not none %}
         <div class="project-src-links">
-            {% if project_github is defined %}
+            {% if project_github is not none %}
             <a target="_blank" href="{{project_github}}"><i class="fab fa-github"></i></a>
             {% endif %}
-            {% if project_document is defined %}
+            {% if project_document is not none %}
             <a target="_blank" href="{{project_document}}"><i class="fas fa-file-alt"></i></a>
             {% endif %}
         </div>
     {% endif %}
 
-    {% if project_skills is defined %}
+    {% if project_skills is not none %}
         <ul id="skills">
             {% for skill in project_skills %}
             <li>{{ skill }}</li>
