@@ -46,5 +46,5 @@ class Generator:
 
 if __name__ == "__main__":
     generator = Generator(sys.argv[1], sys.argv[2], sys.argv[3])
-    generator.render_blog("newblog.html", "newblog")
-    generator.render_index("newindex.html")
+    generator.render_blog("blog.html", "posts")
+    generator.render_index("index.html")
