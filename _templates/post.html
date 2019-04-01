@@ -1,12 +1,25 @@
 {% extends "sub-level-base.html" %}
-{% block title %}{{ post_title }}{% endblock %}
+{% block title %}{{ post.title }}{% endblock %}
 {% block head %}
     {{ super() }}
+    <link rel="stylesheet" href="../css/post.css">
 {% endblock %}
 
 
 {% block body %}
     {{ super() }}
 
-    {{ post_body }}
+    <div class="post-content-wrapper">
+        <div class="post-background">
+            <div class="post-content">
+                <h1>{{ post.title }}</h1>
+                <h2>{{ post.formatted_date() }}</h2>
+
+                <hr id="title-sep">
+                <div class="post-body">
+                    {{ post.body }}
+                </div>
+            </div>
+        </div>
+    </div>
 {% endblock %}

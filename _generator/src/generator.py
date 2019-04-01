@@ -40,11 +40,11 @@ class Generator:
         for post in self.posts:
             post.set_output_dir(posts_dir_path)
             post_file = post.post_file()
-            open(post_file, 'w').write(self.render_template("post.html", {"post_body": post.body}))
+            open(post_file, 'w').write(self.render_template("post.html", {"post": post}))
 
         open(blog_path, 'w').write(self.render_template("blog.html"))
 
 if __name__ == "__main__":
     generator = Generator(sys.argv[1], sys.argv[2], sys.argv[3])
-    #generator.render_blog("tmp.html", "tmp")
-    generator.render_index("tmp.html")
+    generator.render_blog("newblog.html", "newblog")
+    generator.render_index("newindex.html")
