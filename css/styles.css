@@ -68,15 +68,14 @@ main {
 
 .intro {
     font-family: 'Montserrat', sans-serif;
-    font-size: 4.5em;
+    font-size: 5em;
     font-weight: 300;
 }
 
 main>.tagline {
-    font-family: 'Comfortaa', sans-serif;
-    font-size: 1.3rem;
+    font-family: 'Didact Gothic', sans-serif;
+    font-size: 2rem;
     margin: 1.5rem 0;
-    font-weight: 400;
 }
 
 .icons-social i {
@@ -173,7 +172,7 @@ main>.tagline {
 }
 
 .project {
-    font-family: 'Comfortaa', sans-serif;
+    font-family: 'Didact Gothic', sans-serif;
     display: inline-block;
 }
 
@@ -186,8 +185,7 @@ main>.tagline {
 .project p {
     padding: 1em 1.5em;
     height: 100%;
-    font-size: 0.75em;
-    font-weight: 300;
+    font-size: 0.85em;
     text-align: left;
 }
 
@@ -233,9 +231,8 @@ ul#skills li:hover {
 
 .about-section p {
     padding-top: 1em;
-    font-family: 'Comfortaa';
-    font-weight: 300;
-    font-size: 0.75em;
+    font-family: 'Didact Gothic';
+    font-size: 0.9em;
 }
 
 .hover-link-container {
@@ -302,8 +299,8 @@ ul#skills li:hover {
 }
 
 footer {
-    font-family: 'Comfortaa', sans-serif;
-    font-size: 0.6em;
+    font-family: 'Didact Gothic', sans-serif;
+    font-size: 0.7em;
     font-weight: 400;
     margin: auto;
     text-align: center;
