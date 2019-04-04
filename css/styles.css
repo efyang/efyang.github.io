@@ -183,9 +183,17 @@ main>.tagline {
 }
 
 .project p {
-    padding: 1em 1.5em;
+    padding: 0 1.5em 1em;
     height: 100%;
     font-size: 0.85em;
+    text-align: left;
+}
+
+.project ul:not(#skills) {
+    font-size: 0.85em;
+    margin: 0 1.5em 0;
+    padding: 0 1.5em 1em;
+    list-style-type: circle;
     text-align: left;
 }
 
@@ -364,7 +372,7 @@ footer {
 }
 
 .project>hr#project-sep-top {
-    margin: 0.5em auto 0;
+    margin: 0.5em auto 0.5em;
     color: #48556454;
     width: 65%;
 }
