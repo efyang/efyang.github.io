@@ -192,7 +192,7 @@ main>.tagline {
 ul#skills li {
     display: inline;
     border-radius: 25px;
-    padding: 0.5em 0.6em 0.4em;
+    padding: 0.4em 0.6em 0.5em 0.65em;
     transition: 0.3s;
     background: #b3e5fc;
     font-size: 0.8em;
