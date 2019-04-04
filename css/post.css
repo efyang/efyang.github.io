@@ -30,7 +30,7 @@
 }
 
 .post-background {
-    width: 80%;
+    width: 90%;
     margin: auto;
     background: white;
     box-shadow: 0 0 0.1em 0.1em #f2f2f2;
@@ -43,7 +43,7 @@
 }
 
 .post-body {
-    padding: 1em;
+    padding: 1em 0 1em;
 }
 
 .post-content p {
