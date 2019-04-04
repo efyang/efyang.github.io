@@ -92,16 +92,16 @@
                 
                     
                         <div class="project">
-    <a class="project-anchor" id="pbook-gui"></a>
+    <a class="project-anchor" id="ocv-roverruckus"></a>
     <div class="project-hover-link-container">
         
             <div class="project-hover-link-container">
-    <a href="#pbook-gui">
+    <a href="#ocv-roverruckus">
         <div class="link-wrapper" style="display: flex;">
             <div class="project-link-img-wrapper">
                 <img class="project-link-img" src="octicons/link.svg"></img>
             </div>
-            <h2>pbook-gui</h2>
+            <h2>ocv-roverruckus</h2>
         </div>
     </a>
     <!-- spacer element -->
@@ -114,55 +114,20 @@
 
     <p>This site!</p>
 
+<img src=media/images/ocv-example.jpg width=70% height=auto></img>
 
-    
-        <div class="project-src-links">
-            
-            <a target="_blank" href="https://github.com/efyang/pbook-gui"><i class="fab fa-github"></i></a>
-            
-            
-        </div>
-    
-
-    
-        <ul id="skills">
-            
-            <li>Rust</li>
-            
-        </ul>
-    
-</div>
-                    
-                
-                    
-                        <div class="project">
-    <a class="project-anchor" id="markov-haiku"></a>
-    <div class="project-hover-link-container">
-        
-            <div class="project-hover-link-container">
-    <a href="#markov-haiku">
-        <div class="link-wrapper" style="display: flex;">
-            <div class="project-link-img-wrapper">
-                <img class="project-link-img" src="octicons/link.svg"></img>
-            </div>
-            <h2>markov-haiku</h2>
-        </div>
-    </a>
-    <!-- spacer element -->
-    <img class="project-link-img" src="octicons/link.svg" style="visibility:hidden;"></img>
-</div>
-        
-    </div>
-
-    <hr id="project-sep-top">
-
-    <p>This site!</p>
+<ul>
+    <li>Detect FTC scoring elements using OpenCV</li>
+    <li>Currently using just colorspace thresholding to detect objects, augmented with watershed for segmentation of objects</li>
+    <li>Potential usage of cascade classifier</li>
+    <li>Intend for depth calculation capability in order to get 3d relative coordinates of objects purely based off of image</li>
+</ul>
 
 
     
         <div class="project-src-links">
             
-            <a target="_blank" href="https://github.com/efyang/markov-haiku"><i class="fab fa-github"></i></a>
+            <a target="_blank" href="https://github.com/efyang/ocv-roverruckus"><i class="fab fa-github"></i></a>
             
             
         </div>
@@ -172,6 +137,8 @@
         <ul id="skills">
             
             <li>Python</li>
+            
+            <li>OpenCV</li>
             
         </ul>
     
@@ -200,7 +167,12 @@
 
     <hr id="project-sep-top">
 
-    <p>This site!</p>
+    <p>A lisp dialect with an interpreter written in Rust from scratch.</p>
+
+<ul>
+    <li>Supported a couple of basic mathematical operators, print, etc.</li>
+    <li>All of the necessary framework to make a useable language was in place</li>
+</ul>
 
 
     
@@ -245,9 +217,19 @@
     <hr id="project-sep-top">
 
     <p>This site!</p>
+
+<video controls autoplay loop>
+    <source src="media/videos/epicycle-example.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+</video>
+
 <ul>
-    <li>Test element</li>
-    <li>Test element 2</li>
+    <li>Take an input image and create contours out of it</li>
+    <li>Find a way to connect contours (as they are not necessarily closed) into one closed path</li>
+    <li>Apply the DFT and Inverse DFT to find the fourier coefficients of the path</li>
+    <li>Use the approximated coefficients to recreate animations of the approximate path being drawn</li>
+    <li>Initially prototyped in MATLAB, then moved to python for animation speed (bottleneck was drawing, not calculation)</li>
+    <li>Generate text parametric equations of approximated paths</li>
 </ul>
 
 
@@ -256,6 +238,8 @@
             
             <a target="_blank" href="https://github.com/efyang/epicycles"><i class="fab fa-github"></i></a>
             
+            
+            <a target="_blank" href="media/documents/efyang_KAM_Paper_Approximating_Images_with_Epicycles.pdf"><i class="fas fa-file-alt"></i></a>
             
         </div>
     
@@ -344,6 +328,12 @@
 
     <p>visualizers</p>
 
+<ul>
+    <li>A GTK-based desktop bar-style audio visualizer, designed to run smoother and faster than Impulse (a similar program running on the Screenlets framework) while taking less system resources.</li>
+    <li>Actually visibly smoother than impulse and ~half the (total) cpu usage of impulse</li>
+    <li>Parallel design to allow for multiple graphical instances to run</li>
+</ul>
+
 
     
         <div class="project-src-links">
@@ -388,12 +378,20 @@
 
     <p>This site!</p>
 
+<ul>
+    <li>Field-centric localization with vuforia</li>
+    <li>Overall intended to be highly modular in structure (Composition > Inheritance for robot parts) and extensible</li>
+</ul>
+
+
 
     
         <div class="project-src-links">
             
             <a target="_blank" href="https://github.com/2017-2018-wy-robophins/ftc_app"><i class="fab fa-github"></i></a>
             
+            
+            <a target="_blank" href="media/documents/efyang_2018_2019_FTC_3216_Autonomous_and_Control_Writeup.pdf"><i class="fas fa-file-alt"></i></a>
             
         </div>
     
@@ -402,6 +400,10 @@
         <ul id="skills">
             
             <li>Java</li>
+            
+            <li>Kotlin</li>
+            
+            <li>Android</li>
             
         </ul>
     
@@ -431,6 +433,12 @@
     <hr id="project-sep-top">
 
     <p>This site!</p>
+
+<ul>
+    <li>Go in racket</li>
+    <li>Surround function probably the hardest part of project (2-pass recursive algorithm, 1 pass to mark off potential, then another pass to mark off final surrounded based on first pass)</li>
+    <li>Multiplayer, works with client-server model</li>
+</ul>
 
 
     
@@ -475,7 +483,15 @@
     <hr id="project-sep-top">
 
     <p>This site!</p>
-<p>p2</p>
+
+<ul>
+    <li>Simulate gravity for bodies</li>
+    <li>Path drawing</li>
+    <li>Good editing UI (switch to edit mode, then click for center, then click for outer point, click for direction vector, etc.)</li>
+    <li>Horizontal/Vertical zooming and graph drawing</li>
+    <li>Good performance</li>
+</ul>
+
 
 
     
@@ -521,6 +537,14 @@
 
     <p>This site!</p>
 
+<ul>
+    <li>Goal of automating specific data visualization processes (such as 3d colored lag plots) from raw data to human-interpretable data</li>
+    <li>Used Python and associated libraries, including pandas, numpy, matplotlib, and plotly to process time-series data</li>
+    <li>Worked with both pre-processed and raw foster-care data, on the scale of millions of entries.</li>
+    <li>Introduced to and implemented data analysis concepts and methods: 3D lag plots, lowess smoothing, differencing, aggregation, etc.</li>
+    <li>Introduced to concepts of attractors, autocorrelation, convergent cross mapping, etc.</li>
+</ul>
+
 
     
         <div class="project-src-links">
@@ -565,6 +589,12 @@
 
     <p>This site!</p>
 
+<ul>
+    <li>Final project for CEE 101S, featuring near-real-time graphics in MATLAB.</li>
+    <li>Displayed the feasibility of vectorizing large amounts of chained conditionals to allow for speed comparable to compiled programs with for loops (for loops are notoriously slow in matlab).</li>
+</ul>
+
+
 
     
         <div class="project-src-links">
@@ -608,6 +638,13 @@
     <hr id="project-sep-top">
 
     <p>This site!</p>
+
+<ul>
+    <li>Implementation of a classification neural network from scratch over the summer of 2017.</li>
+    <li>Uses instructions from neuralnetworksanddeeplearning.com</li>
+    <li>97% accuracy</li>
+</ul>
+
 
 
     
@@ -674,6 +711,8 @@
             
             <li>Kotlin</li>
             
+            <li>Android</li>
+            
         </ul>
     
 </div>
@@ -717,6 +756,12 @@
                 <li>Email: </li>
                 <li>LinkedIn: </li>
             </ul>
+        </div>
+
+        <div class="back-scroll">
+            <a href="#home">
+                <i class="fas fa-chevron-up"></i>
+            </a>
         </div>
     </div>
 

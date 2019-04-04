@@ -147,7 +147,32 @@ main>.tagline {
     padding: 0 0 1em;
 }
 
+.back-scroll i {
+    font-size: 2em;
+    transition: 0.5s ease-in-out;
+}
 
+.back-scroll a {
+    color: #999;
+    transition: 0.3s;
+}
+
+.back-scroll a:hover {
+    color: #555;
+}
+
+.back-scroll i:hover {
+    transform: rotate3d(0, 1, 0, 180deg)
+}
+
+.back-scroll {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    padding: 0 0 1em;
+}
 
 .projects-wrapper {
     min-height: 100vh;
@@ -216,6 +241,7 @@ ul#skills li:hover {
     flex-direction: column;
     justify-content: center;
     background: #efdcd5;
+    position: relative;
 }
 
 .about-section {
@@ -340,6 +366,11 @@ footer {
     border-radius: 0.5em;
 }
 
+.project video {
+    width: 80%;
+    height: auto;
+}
+
 .project:hover {
     box-shadow: 0 0 0.1em 0.15em #f0f0f0;
 }
@@ -372,7 +403,7 @@ footer {
 }
 
 .project>hr#project-sep-top {
-    margin: 0.5em auto 0.5em;
+    margin: 0.5em auto 1em;
     color: #48556454;
     width: 65%;
 }
