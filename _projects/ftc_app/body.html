@@ -1,7 +1,14 @@
-<p>This site!</p>
+<p>Built and maintained the main code repository for FTC team #3216, used in both the 2017-2018 and 2018-2019 competition seasons.</p>
 
 <ul>
-    <li>Field-centric localization with vuforia</li>
-    <li>Overall intended to be highly modular in structure (Composition > Inheritance for robot parts) and extensible</li>
+    <li>Field-centric localization with Vuforia</li>
+    <li>Robust game element detection using TensorFlow Lite</li>
+    <li>Wrote and manually tuned PID control systems for motion</li>
+    <li>Overall intended to be highly modular in structure (Composition > Inheritance for robot parts) and extensible
+        <ul>
+            <li>Asynchronous <tt>Command</tt> system where specific actions are separated into their own <tt>Command</tt> sub-class</li>
+            <li>All hardware and software components separated into their own <tt>Component</tt> sub-class</li>
+        </ul>
+    </li>
 </ul>
 
