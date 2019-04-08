@@ -2,6 +2,7 @@
 import jinja2
 import sys
 import os
+import shutil
 from project import Project
 from post import Post
 
@@ -37,14 +38,31 @@ class Generator:
     def render_blog(self, blog_path, posts_dir_path):
         if not os.path.exists(posts_dir_path):
             os.makedirs(posts_dir_path)
+        print("generating posts.")
         for post in self.posts:
             post.set_output_dir(posts_dir_path)
             post_file = post.post_file()
+            post_dir = os.path.join(post.posts_output_dir, post.hyphenated_title())
+            print(post.origin_dir, "->", post_dir)
+            print("copy media: ")
+            post_media_origin_dir = os.path.join(post.origin_dir, "media")
+            post_media_dest_dir = os.path.join(post_dir, "media")
+            print(post_media_origin_dir, "->", post_media_dest_dir)
+            if os.path.exists(post_media_dest_dir):
+                shutil.rmtree(post_media_dest_dir)
+            shutil.copytree(post_media_origin_dir, post_media_dest_dir)
+            if not os.path.exists(post_dir):
+                os.mkdir(post_dir)
             open(post_file, 'w').write(self.render_template("post.html", {"post": post}))
 
+        print("generating blog.")
         open(blog_path, 'w').write(self.render_template("blog.html"))
 
 if __name__ == "__main__":
+    print("initializing...")
     generator = Generator(sys.argv[1], sys.argv[2], sys.argv[3])
+    print("rendering blog.")
     generator.render_blog("blog.html", "posts")
+    print("rendering index.")
     generator.render_index("index.html")
+    print("done.")

@@ -4,11 +4,12 @@ import yaml
 import os
 
 class Post:
-    def __init__(self, title, date, body):
+    def __init__(self, title, date, body, origin_dir):
         self.title = title
         self.body = body
         self.date = date
         self.posts_output_dir = None
+        self.origin_dir = origin_dir
 
     def preview_text(self, preview_length=300):
         soup = BeautifulSoup(self.body, features="lxml")
@@ -38,7 +39,7 @@ class Post:
             config = yaml.load(stream)
             dt = datetime.strptime(config['time'], "%m/%d/%Y")
             body = open(os.path.join(d, "body.html"), 'r').read()
-            return cls(config['title'], dt, body)
+            return cls(config['title'], dt, body, d)
 
     def set_output_dir(self, d):
         self.posts_output_dir = d
@@ -47,4 +48,4 @@ class Post:
         return self.title.replace(' ', '-')
 
     def post_file(self):
-        return str(os.path.join(self.posts_output_dir, self.hyphenated_title() + ".html"))
+        return str(os.path.join(self.posts_output_dir, self.hyphenated_title() + "/post.html"))
