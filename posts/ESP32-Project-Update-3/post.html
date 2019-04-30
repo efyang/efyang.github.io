@@ -59,15 +59,35 @@
 
                 <hr id="title-sep">
                 <div class="post-body">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Rhoncus aenean vel elit scelerisque mauris pellentesque pulvinar. Etiam tempor orci eu lobortis elementum nibh tellus molestie nunc. Et malesuada fames ac turpis egestas integer eget aliquet. Tempor orci dapibus ultrices in iaculis. Diam ut venenatis tellus in metus vulputate eu. Velit sed ullamcorper morbi tincidunt ornare massa eget. Nulla aliquet enim tortor at auctor urna. Quam vulputate dignissim suspendisse in est ante. Vel pharetra vel turpis nunc eget. Nunc mattis enim ut tellus elementum.</p>
+                    <p>New 3D printed cases came in today, courtesy of my friend who was willing to print them on his printer. The new case has the holes for power and the heart sensor pre-cut this time, which lets me do a lot less work cutting those holes out. It also fixes a majority of the spacing and fitting issues that I had with the previous iteration of the case, where the battery case didn't fit very well and where there was an extra slot for a touch sensor. Some of the support columns have also been changed from solid columns into only top bits, which allows the case to still support the lid, but saves a lot of interior space.</p>
+<div class="figbox">
+    <div class="figure">
+        <img src="media/images/case-iteration-1.jpg">
+        <p>The first iteration of the case.</p>
+    </div>
 
-<p>
-Id eu nisl nunc mi ipsum faucibus vitae. Ultrices gravida dictum fusce ut placerat orci nulla. Turpis cursus in hac habitasse platea. Feugiat scelerisque varius morbi enim. Ac tincidunt vitae semper quis lectus nulla at volutpat diam. Mauris ultrices eros in cursus turpis. Aliquam vestibulum morbi blandit cursus risus at ultrices mi tempus. Diam in arcu cursus euismod quis viverra nibh cras pulvinar. Cursus eget nunc scelerisque viverra mauris. Diam sit amet nisl suscipit adipiscing bibendum. Tellus rutrum tellus pellentesque eu. In iaculis nunc sed augue lacus viverra. Tempor orci eu lobortis elementum nibh tellus molestie nunc non. Fames ac turpis egestas integer eget aliquet.</p>
+    <div class="figure">
+        <img src="media/images/case-iteration-2.jpg">
+        <p>The second, newly improved iteration of the case.</p>
+    </div>
+</div>
 
-<p>
-Lectus arcu bibendum at varius vel pharetra. Condimentum id venenatis a condimentum vitae sapien. Potenti nullam ac tortor vitae purus faucibus ornare suspendisse sed. Leo vel fringilla est ullamcorper eget nulla facilisi etiam dignissim. Nam libero justo laoreet sit amet cursus sit amet dictum. Scelerisque varius morbi enim nunc. Aenean et tortor at risus viverra adipiscing. Quis imperdiet massa tincidunt nunc pulvinar sapien. Scelerisque in dictum non consectetur. Condimentum id venenatis a condimentum vitae. Enim sit amet venenatis urna cursus eget nunc scelerisque viverra. Orci ac auctor augue mauris augue neque gravida in. Hac habitasse platea dictumst vestibulum rhoncus. Donec ac odio tempor orci dapibus ultrices in iaculis. Laoreet sit amet cursus sit amet. Malesuada bibendum arcu vitae elementum curabitur vitae nunc sed velit. Laoreet id donec ultrices tincidunt arcu non sodales neque. Ac orci phasellus egestas tellus rutrum tellus pellentesque eu tincidunt. Tincidunt vitae semper quis lectus.</p>
+<p>You might notice that the button LEDs don't look much like the LEDs from the last post. This is because while I tried to solder the original neopixel nano LEDs, the solder actually melted on the LED end, which meant that the whole thing just broke while soldering. I replaced these with WS2812B LEDs, which are the same ones that I'm using for the main LED array. While not nearly as cool as the original ones, using the same LEDs will probably make troubleshooting and writing code far easier, while these larger LEDs are also quite a bit more robust and tested by the community. These chains of LEDs will be hot-glued to the side of the case some distance away so that the light diffuses properly.</p>
 
-<p>lorem ipsum dolor sit amet, consectetur adipiscing elit. sed enim ex, pharetra sed lorem in, accumsan dapibus elit. aliquam erat volutpat. cras consequat erat enim, eu varius metus tempor et. sed varius tempor libero vel mattis. cras lacinia venenatis erat, et sollicitudin elit imperdiet in. suspendisse vel commodo libero. nullam dui odio, rutrum non imperdiet sit amet, malesuada eget ipsum.</p>
+<p>Besides the new case, I've also finished placing and soldering the first of the heart-shaped LED plates, which took about 2 hours of continuous work to do. These come complete with a 1000μF capacitor and a 470Ω resistor attached to the power and signal lines, respectively, so that the whole thing is modular and can be easily tested on its own (also so that I don't forget them later on). The capacitor is attached in parallel across from power to ground, and smooths out any power spikes from the LEDs, while the resistor reduces the noise on the data line. This module was then tested with an Arduino, again with the FastLED library.</p>
+
+<div class="figbox">
+    <div class="figure">
+        <img src="media/images/leds-off.jpg">
+        <p>Finished LED module.</p>
+    </div>
+
+    <div class="figure">
+        <img src="media/images/leds-on.jpg">
+        <p>LED Module being tested.</p>
+    </div>
+</div>
+
                 </div>
             </div>
         </div>
