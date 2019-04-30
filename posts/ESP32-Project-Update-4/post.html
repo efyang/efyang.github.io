@@ -59,7 +59,22 @@
 
                 <hr id="title-sep">
                 <div class="post-body">
-                    <p>As it turns out, the voltage drop issue has been completely fixed just by switching the main power from 3.3v to 5v, which basically eliminates the voltage drop due to the leds.</p>
+                    <p>Bit of a blog hiatus between this post and the previous posts, but the hardware side of the project has been essentially completed. In this time, I've found one major bug with my project design, related to voltage. After putting everything together and tring to just have the main LED array pulse when heartbeats were detected, the whole thing started flashing at an extremely high frequency. After analyzing some of the serial plots of the raw pulse sensor values, I found that the pulse sensor was actually detecting extraneous heartbeats and had oscillating raw values. Using a fluke, I traced this back to the LEDs. As it turns out, the LEDs actually pull enough power from the main board that the voltage substantially drops when the LEDs pulse. This change in value feeds into the raw input values that the pulse sensor is detecting. Because the pulse sensor is a cheap sensor from Aliexpress and is extremely sensitive to very minute changes in value, I don't think there's a real way to account for the LED voltage drop consistently, and so I've decided to disable the pulse sensor. I do have an idea to fix this by using a transistor as a switch to gate off the pulse sensor power instead of directly gating power from a GPIO pin, but given the time constraints of this project and basically being way over budget at this point, the transistors wouldn't arrive on time and probably might not even work. Although this is definitely something I plan on investigating further in the future.</p>
+
+<div class="figure">
+    <img src="media/images/opentop.jpg">
+    <p>The internal components of the second heart</p>
+</div>
+
+<p>The same voltage drop issue came up when I was testing the mood buttons with the LED array together. When the LEDs pulsed, there would be a large enough voltage drop that the buttons would detect a touch even when there wasn't one. As it turns out, the voltage drop issue has been completely fixed for the buttons just by switching the main power from 3.3v to 5v, which makes the voltage drop from the LEDs within the range of values that won't be detected by the buttons. However, the pulse sensor is still affected by the (now slightly smaller) voltage drop from the LEDs and so that will likely remain disabled.</p>
+
+<div class="figure">
+    <img src="media/images/nearcompletion.jpg">
+    <p>One of the hearts, near completion</p>
+</div>
+
+<p>Otherwise, the project has been pretty painless, and now the focus is going to be on writing and fixing the software. Serverside, I forgot to account for the different moods and so that needs to be added in and I can now remove the bpm informatino since I won't be using the pulse sensor. This should be a fairly painless switch, especially since none of the client communication code has been written yet. On the client side, all the basic functionality has been implemented, all that's left is to hook them up to the server and then adjust the bluetooth configuration app for them. I'm thinking of using FastBLE for the BLE library, both because of ease of use and because it was the only library I found that actually worked in terms of scanning and connecting to devices.</p>
+
                 </div>
             </div>
         </div>
