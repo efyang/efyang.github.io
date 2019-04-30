@@ -20,7 +20,7 @@
 <link rel="stylesheet" href="../../css/themes/grey-white.css">
 
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Didact+Gothic|Montserrat:300,500,600">
-        <title>ESP32 Project Update 1</title>
+        <title>ESP32 Project Update 4</title>
 
         
     
@@ -54,38 +54,12 @@
     <div class="post-content-wrapper">
         <div class="post-background">
             <div class="post-content">
-                <h1>ESP32 Project Update 1</h1>
-                <h2>march 29, 2019</h2>
+                <h1>ESP32 Project Update 4</h1>
+                <h2>april 28, 2019</h2>
 
                 <hr id="title-sep">
                 <div class="post-body">
-                    <p>A lot of planning and soldering was done today. Because the neopixel nano 2427s were not possible to mount directly to the touch sensors by themselves (the DIN pin pointed into the touch button, which would require a wire going underneath the led to connect to it), I've decided to make a strip of the leds separately. For each of the LEDs, a wire was soldered to each of the pins and hot glue was added on top to protect the solder joints, as they really weren't meant to be soldered this way.</p>
-
-<div class="figure">
-    <img src="media/images/solder-pattern.jpg">
-    <p>LED solder pattern</p>
-    <p>DIN, VCC, DOUT, GND from top right, clockwise</p>
-</div>
-
-<div class="figure">
-    <img src="media/images/finished-leds.jpg">
-    <p>Tray of finished LEDs</p>
-</div>
-
-<p>These were then tested with an Arduino with example FastLED code just to check that the colors and pins were correct.</p>
-
-<div class="figure">
-    <img src="media/images/led-test.jpg">
-    <p>Testing LEDs with an Arduino</p>
-</div>
-
-<p>Now that the LEDs have been mde separate, there's no real reason to keep the LEDs on the touch sensors, as they would just drain power and be distracting to the viewer. Because of this, I desoldered the LEDs from all the touch sensors and covered the solder pads with hot glue to prevent any possible short circuits. Internally, the circuit for the LED was probably in parallel, which means that despite the removal of the LED, the touch sensor is still fully functional</p>
-
-<div class="figure">
-    <img src="media/images/touch-sensors.jpg">
-    <p>Finished Touch Sensors</p>
-</div>
-
+                    <p>As it turns out, the voltage drop issue has been completely fixed just by switching the main power from 3.3v to 5v, which basically eliminates the voltage drop due to the leds.</p>
                 </div>
             </div>
         </div>
