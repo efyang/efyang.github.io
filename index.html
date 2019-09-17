@@ -92,16 +92,16 @@
                 
                     
                         <div class="project">
-    <a class="project-anchor" id="ocv-roverruckus"></a>
+    <a class="project-anchor" id="Chapin-Hall-Data-Analytics"></a>
     <div class="project-hover-link-container">
         
             <div class="project-hover-link-container">
-    <a href="#ocv-roverruckus">
+    <a href="#Chapin-Hall-Data-Analytics">
         <div class="link-wrapper" style="display: flex;">
             <div class="project-link-img-wrapper">
                 <img class="project-link-img" src="octicons/link.svg"></img>
             </div>
-            <h2>ocv-roverruckus</h2>
+            <h2>Chapin Hall Data Analytics</h2>
         </div>
     </a>
     <!-- spacer element -->
@@ -112,21 +112,25 @@
 
     <hr id="project-sep-top">
 
-    <p>A proof-of-concept to detect FTC Rover Ruckus game elements using OpenCV.</p>
+    <p>Automated specific data visualization processes (such as 3D colored lag plots) that convert raw data to human-interpretable data</p>
 
-<img src=media/images/ocv-example.jpg width=70% height=auto></img>
+<video autoplay loop muted playsinline>
+    <source src="media/videos/chapin-hall-example.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+</video>
 
 <ul>
-    <li>Currently using colorspace thresholding to detect objects, augmented with watershed for segmentation of objects</li>
-    <li>Potential usage of cascade classifier</li>
-    <li>Intend for depth calculation capability in order to get 3D relative coordinates of objects purely based off of image</li>
+    <li>Used Python and associated data science libraries, including pandas, numpy, matplotlib, and plotly to process time-series data</li>
+    <li>Worked with both pre-processed and raw foster-care data, on the scale of millions of entries.</li>
+    <li>Introduced to and implemented data analysis concepts and methods: 3D lag plots, lowess smoothing, differencing, aggregation, etc.</li>
+    <li>Introduced to concepts of attractors, autocorrelation, convergent cross mapping, etc.</li>
 </ul>
 
 
     
         <div class="project-src-links">
             
-            <a target="_blank" href="https://github.com/efyang/ocv-roverruckus"><i class="fab fa-github"></i></a>
+            <a target="_blank" href="https://github.com/efyang/timelag-graphgen"><i class="fab fa-github"></i></a>
             
             
         </div>
@@ -136,57 +140,6 @@
         <ul id="skills">
             
             <li>Python</li>
-            
-            <li>OpenCV</li>
-            
-        </ul>
-    
-</div>
-                    
-                
-                    
-                        <div class="project">
-    <a class="project-anchor" id="rlisp"></a>
-    <div class="project-hover-link-container">
-        
-            <div class="project-hover-link-container">
-    <a href="#rlisp">
-        <div class="link-wrapper" style="display: flex;">
-            <div class="project-link-img-wrapper">
-                <img class="project-link-img" src="octicons/link.svg"></img>
-            </div>
-            <h2>rlisp</h2>
-        </div>
-    </a>
-    <!-- spacer element -->
-    <img class="project-link-img" src="octicons/link.svg" style="visibility:hidden;"></img>
-</div>
-        
-    </div>
-
-    <hr id="project-sep-top">
-
-    <p>A lisp dialect with an interpreter written in Rust from scratch.</p>
-
-<ul>
-    <li>Supported a couple of basic mathematical operators, print, etc.</li>
-    <li>All of the necessary framework to make a useable language was in place</li>
-</ul>
-
-
-    
-        <div class="project-src-links">
-            
-            <a target="_blank" href="https://github.com/efyang/rlisp"><i class="fab fa-github"></i></a>
-            
-            
-        </div>
-    
-
-    
-        <ul id="skills">
-            
-            <li>Rust</li>
             
         </ul>
     
@@ -257,16 +210,16 @@
                 
                     
                         <div class="project">
-    <a class="project-anchor" id="efyang.dev"></a>
+    <a class="project-anchor" id="ESP32-Heart"></a>
     <div class="project-hover-link-container">
         
             <div class="project-hover-link-container">
-    <a href="#efyang.dev">
+    <a href="#ESP32-Heart">
         <div class="link-wrapper" style="display: flex;">
             <div class="project-link-img-wrapper">
                 <img class="project-link-img" src="octicons/link.svg"></img>
             </div>
-            <h2>efyang.dev</h2>
+            <h2>ESP32 Heart</h2>
         </div>
     </a>
     <!-- spacer element -->
@@ -277,18 +230,24 @@
 
     <hr id="project-sep-top">
 
-    <p>This site! Modern and clean, building on <a href="https://github.com/flexdinesh/dev-landing-page" style="color:inherit;">flexdinesh/dev-landing-page</a> as a starting point.</p>
+    <p>Currently work in progress! Gets user-inputted mood and heartbeat and displays on paired devices in a smooth, aesthetic format.</p>
 
 <ul>
-    <li>Site itself is pure HTML5/CSS, no JS used</li>
-    <li>Custom static site generation from templates using Python and Jinja2</li>
+    <li>Rust server to allow for cleaned up and lag-adjusted realtime communication between clients over UDP</li>
+    <li>Uses both the BLE and wifi client capabilities on the ESP32 to allow for user configuration and communication between devices</li>
+    <li>Android configuration apps to allow for custom lighting and settings on each client device</li>
+    <li>Custom 3D printed parts and wiring</li>
+    <li>Used parts such as WS2812B LEDs, electrolytic capacitors, resistors, 18650 batteries, and capacitive touch sensors</li>
+    <li>Designed, soldered, and implemented from scratch</li>
 </ul>
+
+<p>Check the <a href="blog.html" style="text-decoration:none;color:inherit"><b>blog</b></a> for updates and more details :)</p>
 
 
     
         <div class="project-src-links">
             
-            <a target="_blank" href="https://github.com/efyang/efyang.github.io"><i class="fab fa-github"></i></a>
+            <a target="_blank" href="https://github.com/efyang/esp32-heart-pair-main"><i class="fab fa-github"></i></a>
             
             
         </div>
@@ -297,65 +256,15 @@
     
         <ul id="skills">
             
-            <li>CSS</li>
-            
-            <li>HTML</li>
-            
-            <li>Python</li>
-            
-        </ul>
-    
-</div>
-                    
-                
-                    
-                        <div class="project">
-    <a class="project-anchor" id="visualizers"></a>
-    <div class="project-hover-link-container">
-        
-            <div class="project-hover-link-container">
-    <a href="#visualizers">
-        <div class="link-wrapper" style="display: flex;">
-            <div class="project-link-img-wrapper">
-                <img class="project-link-img" src="octicons/link.svg"></img>
-            </div>
-            <h2>visualizers</h2>
-        </div>
-    </a>
-    <!-- spacer element -->
-    <img class="project-link-img" src="octicons/link.svg" style="visibility:hidden;"></img>
-</div>
-        
-    </div>
-
-    <hr id="project-sep-top">
-
-    <p>A GTK-based desktop bar-style audio visualizer, designed to run smoother and faster than Impulse (a similar program running on the Screenlets framework) while taking less system resources.</p>
-
-<video autoplay loop muted playsinline>
-    <source src="media/videos/visualizers-example.mp4" type="video/mp4">
-    Your browser does not support the video tag.
-</video>
-
-<ul>
-    <li>Visibly smoother than Impulse and ~half (4% vs 8%) the total cpu usage of Impulse</li>
-    <li>Parallel design to allow for multiple graphical instances to run at the same time even on the same audio sinks</li>
-</ul>
-
-
-    
-        <div class="project-src-links">
-            
-            <a target="_blank" href="https://github.com/efyang/visualizers"><i class="fab fa-github"></i></a>
-            
-            
-        </div>
-    
-
-    
-        <ul id="skills">
+            <li>Arduino</li>
             
             <li>Rust</li>
+            
+            <li>Java</li>
+            
+            <li>Kotlin</li>
+            
+            <li>Android</li>
             
         </ul>
     
@@ -427,6 +336,164 @@
                 
                     
                         <div class="project">
+    <a class="project-anchor" id="nnlearn-rs"></a>
+    <div class="project-hover-link-container">
+        
+            <div class="project-hover-link-container">
+    <a href="#nnlearn-rs">
+        <div class="link-wrapper" style="display: flex;">
+            <div class="project-link-img-wrapper">
+                <img class="project-link-img" src="octicons/link.svg"></img>
+            </div>
+            <h2>nnlearn-rs</h2>
+        </div>
+    </a>
+    <!-- spacer element -->
+    <img class="project-link-img" src="octicons/link.svg" style="visibility:hidden;"></img>
+</div>
+        
+    </div>
+
+    <hr id="project-sep-top">
+
+    <p>Implementation of a classification neural network from scratch over the summer of 2017.</p>
+
+<ul>
+    <li>97% accuracy on the MNIST dataset</li>
+    <li>Stochastic gradient descent learning</li>
+    <li>Based on neuralnetworksanddeeplearning.com</li>
+</ul>
+
+
+
+    
+        <div class="project-src-links">
+            
+            <a target="_blank" href="https://github.com/efyang/nnlearn-rs"><i class="fab fa-github"></i></a>
+            
+            
+        </div>
+    
+
+    
+        <ul id="skills">
+            
+            <li>Rust</li>
+            
+        </ul>
+    
+</div>
+                    
+                
+                    
+                        <div class="project">
+    <a class="project-anchor" id="ocv-roverruckus"></a>
+    <div class="project-hover-link-container">
+        
+            <div class="project-hover-link-container">
+    <a href="#ocv-roverruckus">
+        <div class="link-wrapper" style="display: flex;">
+            <div class="project-link-img-wrapper">
+                <img class="project-link-img" src="octicons/link.svg"></img>
+            </div>
+            <h2>ocv-roverruckus</h2>
+        </div>
+    </a>
+    <!-- spacer element -->
+    <img class="project-link-img" src="octicons/link.svg" style="visibility:hidden;"></img>
+</div>
+        
+    </div>
+
+    <hr id="project-sep-top">
+
+    <p>A proof-of-concept to detect FTC Rover Ruckus game elements using OpenCV.</p>
+
+<img src=media/images/ocv-example.jpg width=70% height=auto></img>
+
+<ul>
+    <li>Currently using colorspace thresholding to detect objects, augmented with watershed for segmentation of objects</li>
+    <li>Potential usage of cascade classifier</li>
+    <li>Intend for depth calculation capability in order to get 3D relative coordinates of objects purely based off of image</li>
+</ul>
+
+
+    
+        <div class="project-src-links">
+            
+            <a target="_blank" href="https://github.com/efyang/ocv-roverruckus"><i class="fab fa-github"></i></a>
+            
+            
+        </div>
+    
+
+    
+        <ul id="skills">
+            
+            <li>Python</li>
+            
+            <li>OpenCV</li>
+            
+        </ul>
+    
+</div>
+                    
+                
+                    
+                        <div class="project">
+    <a class="project-anchor" id="efyang.dev"></a>
+    <div class="project-hover-link-container">
+        
+            <div class="project-hover-link-container">
+    <a href="#efyang.dev">
+        <div class="link-wrapper" style="display: flex;">
+            <div class="project-link-img-wrapper">
+                <img class="project-link-img" src="octicons/link.svg"></img>
+            </div>
+            <h2>efyang.dev</h2>
+        </div>
+    </a>
+    <!-- spacer element -->
+    <img class="project-link-img" src="octicons/link.svg" style="visibility:hidden;"></img>
+</div>
+        
+    </div>
+
+    <hr id="project-sep-top">
+
+    <p>This site! Modern and clean, building on <a href="https://github.com/flexdinesh/dev-landing-page" style="color:inherit;">flexdinesh/dev-landing-page</a> as a starting point.</p>
+
+<ul>
+    <li>Site itself is pure HTML5/CSS, no JS used</li>
+    <li>Custom static site generation from templates using Python and Jinja2</li>
+</ul>
+
+
+    
+        <div class="project-src-links">
+            
+            <a target="_blank" href="https://github.com/efyang/efyang.github.io"><i class="fab fa-github"></i></a>
+            
+            
+        </div>
+    
+
+    
+        <ul id="skills">
+            
+            <li>CSS</li>
+            
+            <li>HTML</li>
+            
+            <li>Python</li>
+            
+        </ul>
+    
+</div>
+                    
+                
+                    
+                        <div class="project">
     <a class="project-anchor" id="physics-sim-gtk"></a>
     <div class="project-hover-link-container">
         
@@ -477,62 +544,6 @@
         <ul id="skills">
             
             <li>Rust</li>
-            
-        </ul>
-    
-</div>
-                    
-                
-                    
-                        <div class="project">
-    <a class="project-anchor" id="Chapin-Hall-Data-Analytics"></a>
-    <div class="project-hover-link-container">
-        
-            <div class="project-hover-link-container">
-    <a href="#Chapin-Hall-Data-Analytics">
-        <div class="link-wrapper" style="display: flex;">
-            <div class="project-link-img-wrapper">
-                <img class="project-link-img" src="octicons/link.svg"></img>
-            </div>
-            <h2>Chapin Hall Data Analytics</h2>
-        </div>
-    </a>
-    <!-- spacer element -->
-    <img class="project-link-img" src="octicons/link.svg" style="visibility:hidden;"></img>
-</div>
-        
-    </div>
-
-    <hr id="project-sep-top">
-
-    <p>Automated specific data visualization processes (such as 3D colored lag plots) that convert raw data to human-interpretable data</p>
-
-<video autoplay loop muted playsinline>
-    <source src="media/videos/chapin-hall-example.mp4" type="video/mp4">
-    Your browser does not support the video tag.
-</video>
-
-<ul>
-    <li>Used Python and associated data science libraries, including pandas, numpy, matplotlib, and plotly to process time-series data</li>
-    <li>Worked with both pre-processed and raw foster-care data, on the scale of millions of entries.</li>
-    <li>Introduced to and implemented data analysis concepts and methods: 3D lag plots, lowess smoothing, differencing, aggregation, etc.</li>
-    <li>Introduced to concepts of attractors, autocorrelation, convergent cross mapping, etc.</li>
-</ul>
-
-
-    
-        <div class="project-src-links">
-            
-            <a target="_blank" href="https://github.com/efyang/timelag-graphgen"><i class="fab fa-github"></i></a>
-            
-            
-        </div>
-    
-
-    
-        <ul id="skills">
-            
-            <li>Python</li>
             
         </ul>
     
@@ -596,16 +607,16 @@
                 
                     
                         <div class="project">
-    <a class="project-anchor" id="nnlearn-rs"></a>
+    <a class="project-anchor" id="rlisp"></a>
     <div class="project-hover-link-container">
         
             <div class="project-hover-link-container">
-    <a href="#nnlearn-rs">
+    <a href="#rlisp">
         <div class="link-wrapper" style="display: flex;">
             <div class="project-link-img-wrapper">
                 <img class="project-link-img" src="octicons/link.svg"></img>
             </div>
-            <h2>nnlearn-rs</h2>
+            <h2>rlisp</h2>
         </div>
     </a>
     <!-- spacer element -->
@@ -616,20 +627,18 @@
 
     <hr id="project-sep-top">
 
-    <p>Implementation of a classification neural network from scratch over the summer of 2017.</p>
+    <p>A lisp dialect with an interpreter written in Rust from scratch.</p>
 
 <ul>
-    <li>97% accuracy on the MNIST dataset</li>
-    <li>Stochastic gradient descent learning</li>
-    <li>Based on neuralnetworksanddeeplearning.com</li>
+    <li>Supported a couple of basic mathematical operators, print, etc.</li>
+    <li>All of the necessary framework to make a useable language was in place</li>
 </ul>
-
 
 
     
         <div class="project-src-links">
             
-            <a target="_blank" href="https://github.com/efyang/nnlearn-rs"><i class="fab fa-github"></i></a>
+            <a target="_blank" href="https://github.com/efyang/rlisp"><i class="fab fa-github"></i></a>
             
             
         </div>
@@ -647,16 +656,16 @@
                 
                     
                         <div class="project">
-    <a class="project-anchor" id="ESP32-Heart"></a>
+    <a class="project-anchor" id="visualizers"></a>
     <div class="project-hover-link-container">
         
             <div class="project-hover-link-container">
-    <a href="#ESP32-Heart">
+    <a href="#visualizers">
         <div class="link-wrapper" style="display: flex;">
             <div class="project-link-img-wrapper">
                 <img class="project-link-img" src="octicons/link.svg"></img>
             </div>
-            <h2>ESP32 Heart</h2>
+            <h2>visualizers</h2>
         </div>
     </a>
     <!-- spacer element -->
@@ -667,24 +676,23 @@
 
     <hr id="project-sep-top">
 
-    <p>Currently work in progress! Gets user-inputted mood and heartbeat and displays on paired devices in a smooth, aesthetic format.</p>
+    <p>A GTK-based desktop bar-style audio visualizer, designed to run smoother and faster than Impulse (a similar program running on the Screenlets framework) while taking less system resources.</p>
+
+<video autoplay loop muted playsinline>
+    <source src="media/videos/visualizers-example.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+</video>
 
 <ul>
-    <li>Rust server to allow for cleaned up and lag-adjusted realtime communication between clients over UDP</li>
-    <li>Uses both the BLE and wifi client capabilities on the ESP32 to allow for user configuration and communication between devices</li>
-    <li>Android configuration apps to allow for custom lighting and settings on each client device</li>
-    <li>Custom 3D printed parts and wiring</li>
-    <li>Used parts such as WS2812B LEDs, electrolytic capacitors, resistors, 18650 batteries, and capacitive touch sensors</li>
-    <li>Designed, soldered, and implemented from scratch</li>
+    <li>Visibly smoother than Impulse and ~half (4% vs 8%) the total cpu usage of Impulse</li>
+    <li>Parallel design to allow for multiple graphical instances to run at the same time even on the same audio sinks</li>
 </ul>
-
-<p>Check the <a href="blog.html" style="text-decoration:none;color:inherit"><b>blog</b></a> for updates and more details :)</p>
 
 
     
         <div class="project-src-links">
             
-            <a target="_blank" href="https://github.com/efyang/esp32-heart-pair-main"><i class="fab fa-github"></i></a>
+            <a target="_blank" href="https://github.com/efyang/visualizers"><i class="fab fa-github"></i></a>
             
             
         </div>
@@ -693,15 +701,7 @@
     
         <ul id="skills">
             
-            <li>Arduino</li>
-            
             <li>Rust</li>
-            
-            <li>Java</li>
-            
-            <li>Kotlin</li>
-            
-            <li>Android</li>
             
         </ul>
     
@@ -735,8 +735,7 @@
 </div>
             
 
-            <p> I'm currently a student at Whitney Young, located in the heart of Chicago.
-            As a lover of most things math and technology, I always try and stay involved on my school's math team and robotics team.
+            <p> I'm currently a student at Princeton University, pursuing a major in Computer Science, B.S.E.
 	    I'm always on the hunt for new technologies to try and more things to learn, especially in the fields of machine learning, robotics, networking, high performance computing and graphics, and physical simulation.
             On the side, you might see me running along the lake shore, re-customizing my linux desktop, or curling up in bed with a nice book.
 	    If you have any questions, want to hit me up with an internship offer or two ;), or just want to geek out about SIGGRAPH papers, weird projects on Github, or cool math problems, please don't hesitate to shoot me a message!</p>
