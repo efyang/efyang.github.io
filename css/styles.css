@@ -204,7 +204,7 @@ main>.tagline {
 .project h2 {
     font-family: 'Montserrat', sans-serif;
     font-weight: 300;
-    font-size: 2.25em;
+    font-size: 1.5em;
 }
 
 .project p {
@@ -316,8 +316,8 @@ ul#skills li:hover {
 }
 
 .project-link-img {
-    height: 1.3em;
-    width: 1.3em;
+    height: 0.8em;
+    width: 0.8em;
 }
 
 .link-wrapper:hover .link-img-wrapper {
@@ -358,11 +358,12 @@ footer {
     width: 100% !important;
     height: auto !important;
     background-color: white;
-    padding: 1em;
+    padding: 2em 2em 2em;
     margin: 1em 0 1em;
     break-inside: avoid;
     transition: 0.3s;
-    box-shadow: 0 0 0.1em 0.1em #f2f2f2;
+    /*box-shadow: 0 0 0.1em 0.1em #f2f2f2;*/
+    border: 1px solid #00000017;
     border-radius: 0.5em;
 }
 
@@ -372,7 +373,8 @@ footer {
 }
 
 .project:hover {
-    box-shadow: 0 0 0.1em 0.15em #f0f0f0;
+    /*box-shadow: 0 0 0.1em 0.15em #f0f0f0;*/
+    border: 1px solid #00000021;
 }
 
 .project-src-links {
@@ -381,7 +383,7 @@ footer {
     padding: 0.2em 0.5em;
     margin: -0.2em 0 0.5em;
     border-radius: 1em;
-    background: #white;
+    background: white;
     transition: 0.3s;
     border: 1px solid #ddd;
 }

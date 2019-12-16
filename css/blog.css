@@ -16,7 +16,7 @@
 }
 
 .posts h1 {
-    font-size: 4em;
+    font-size: 3em;
     font-weight: 300;
 }
 
@@ -24,21 +24,23 @@
     background: white;
     font-family: 'Didact Gothic', sans-serif;
     font-size: 0.85em;
-    padding: 1em 2em 1.5em;
+    padding: 3em 3em 2em;
     margin: 1em;
     transition: 0.3s;
-    box-shadow: 0 0 0.1em 0.1em #f2f2f2;
+    /*box-shadow: 0 0 0.1em 0.1em #f2f2f2;*/
+    border: 1px solid #00000017;
     border-radius: 0.5em;
 }
 
 .post:hover {
-    box-shadow: 0 0 0.1em 0.15em #f0f0f0;
+    /*box-shadow: 0 0 0.1em 0.15em #f0f0f0;*/
+    border: 1px solid #00000021;
 }
 
 .post>h2 {
     font-family: 'Montserrat', sans-serif;
     font-weight: 300;
-    font-size: 2.75em;
+    font-size: 1.8em;
     transition: 0.4s;
 }
 
@@ -70,9 +72,9 @@
 
 .post>h3 {
     font-family: 'Montserrat', sans-serif;
-    font-size: 1em;
+    font-size: 0.75em;
     font-weight: 400;
-    margin: 0.2em 0 -0.4em;
+    margin: 0.5em 0 -0.4em;
 }
 
 .post>h3>a {
@@ -81,7 +83,7 @@
 }
 
 .continue-button-wrapper {
-    padding: 1.5em 0 0;
+    padding: 2em 0 0;
     width: 100%;
 }
 
