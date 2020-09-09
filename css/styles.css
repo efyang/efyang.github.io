@@ -204,13 +204,12 @@ main>.tagline {
 .project h2 {
     font-family: 'Didact Gothic', sans-serif;
     font-weight: 300;
-    font-size: 1.5em;
+    font-size: 2em;
 }
 
 .project p {
     padding: 0 1.5em 1em;
     height: 100%;
-    font-size: 0.9em;
     text-align: left;
 }
 
@@ -245,7 +244,7 @@ ul#skills li:hover {
 }
 
 .about-section {
-    padding: 3em 2em 0px;
+    padding: 3em 5em 0px;
     margin: auto;
     width: 90%;
     color: #485564;
@@ -266,7 +265,6 @@ ul#skills li:hover {
 .about-section p {
     padding-top: 1em;
     font-family: 'Didact Gothic';
-    font-size: 0.9em;
 }
 
 .hover-link-container {
