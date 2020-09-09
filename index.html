@@ -19,7 +19,7 @@
 <link rel="stylesheet" href="css/navbar.css">
 <link rel="stylesheet" href="css/themes/grey-white.css">
 
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Didact+Gothic|Montserrat:300,400,500,600">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Didact+Gothic">
         <title>Edward Yang</title>
 
         
@@ -230,16 +230,22 @@
 
     <hr id="project-sep-top">
 
-    <p>Currently work in progress! Gets user-inputted mood and heartbeat and displays on paired devices in a smooth, aesthetic format.</p>
+    <p>Gets user-inputted mood and heartbeat and displays them on paired devices in a smooth, aesthetic format. Helpful for long distance relationships!</p>
+
+<video autoplay loop muted playsinline>
+    <source src="media/videos/heart-demo.mp4" width="500" height="500" type="video/mp4">
+    Your browser does not support the video tag.
+</video>
 
 <ul>
-    <li>Rust server to allow for cleaned up and lag-adjusted realtime communication between clients over UDP</li>
+    <li>Rust server to allow for cleaned up realtime communication between clients over UDP with a custom protocol</li>
     <li>Uses both the BLE and wifi client capabilities on the ESP32 to allow for user configuration and communication between devices</li>
-    <li>Android configuration apps to allow for custom lighting and settings on each client device</li>
     <li>Custom 3D printed parts and wiring</li>
     <li>Used parts such as WS2812B LEDs, electrolytic capacitors, resistors, 18650 batteries, and capacitive touch sensors</li>
-    <li>Designed, soldered, and implemented from scratch</li>
+    <li>Designed, assembled, soldered, and implemented from scratch</li>
+    <li>Android configuration apps to allow for custom lighting and settings on each client device</li>
 </ul>
+<img src=media/images/heart-app.png width=70% height=auto title="The app!"></img>
 
 <p>Check the <a href="blog.html" style="text-decoration:none;color:inherit"><b>blog</b></a> for updates and more details :)</p>
 
@@ -294,6 +300,8 @@
     <hr id="project-sep-top">
 
     <p>Built and maintained the main code repository for FTC team #3216, used in both the 2017-2018 and 2018-2019 competition seasons.</p>
+
+<img src=media/images/ftc.jpg width=70% height=auto title="The Robot"></img>
 
 <ul>
     <li>Field-centric localization with Vuforia</li>
@@ -742,18 +750,116 @@
 
 
     
-        <div class="project-src-links">
-            
-            <a target="_blank" href="https://github.com/efyang/cos226-files"><i class="fab fa-github"></i></a>
-            
-            
-        </div>
-    
 
     
         <ul id="skills">
             
             <li>Java</li>
+            
+        </ul>
+    
+</div>
+                    
+                
+                    
+                        <div class="project">
+    <a class="project-anchor" id="Lixie-Clone"></a>
+    <div class="project-hover-link-container">
+        
+            <div class="project-hover-link-container">
+    <a href="#Lixie-Clone">
+        <div class="link-wrapper" style="display: flex;">
+            <div class="project-link-img-wrapper">
+                <img class="project-link-img" src="octicons/link.svg"></img>
+            </div>
+            <h2>Lixie Clone</h2>
+        </div>
+    </a>
+    <!-- spacer element -->
+    <img class="project-link-img" src="octicons/link.svg" style="visibility:hidden;"></img>
+</div>
+        
+    </div>
+
+    <hr id="project-sep-top">
+
+    <p>Based off of the popular <a href="https://www.tindie.com/products/connornishijima/lixie-ii-the-newnixie-for-arduino-digit-kit/">Lixie Clock</a>, but PCBs, lasercutting designs and programming done completely from scratch. WIP (Project materials are stuck in Princeton)</p>
+
+<video autoplay loop muted playsinline>
+    <source src="media/videos/lixie-wip.mp4" width="500" height="500" type="video/mp4">
+    Your browser does not support the video tag.
+</video>
+
+<ul>
+</ul>
+
+
+    
+
+    
+        <ul id="skills">
+            
+            <li>Arduino</li>
+            
+        </ul>
+    
+</div>
+                    
+                
+                    
+                        <div class="project">
+    <a class="project-anchor" id="Home-Automation"></a>
+    <div class="project-hover-link-container">
+        
+            <div class="project-hover-link-container">
+    <a href="#Home-Automation">
+        <div class="link-wrapper" style="display: flex;">
+            <div class="project-link-img-wrapper">
+                <img class="project-link-img" src="octicons/link.svg"></img>
+            </div>
+            <h2>Home Automation</h2>
+        </div>
+    </a>
+    <!-- spacer element -->
+    <img class="project-link-img" src="octicons/link.svg" style="visibility:hidden;"></img>
+</div>
+        
+    </div>
+
+    <hr id="project-sep-top">
+
+    <p>Hacked and reprogrammed multiple pre-existing hardware devices while adding smart functionality and integration into personal home assistant server to some by the creation of custom PCBs.</p>
+
+<video autoplay loop muted playsinline>
+    <source src="media/videos/blinds-demo.mp4" width="368" height="700" type="video/mp4">
+    Your browser does not support the video tag.
+</video>
+
+<ul>
+    <li>Setup a personal home assistant instance with esphome on an old PC, running as a docker image on a Fedora Linux distribution</li>
+    <li>Integrate a personal plex media server over a zfs raid-type array with otherwise unused hard disks, with a small SSD cache, giving fault redundancy and speed (saturates router)</li>
+</ul>
+
+<img src=media/images/home-automation-collage.png width=80% height=auto title="Home Automation Collage"></img>
+
+<ul>
+    <li>Design, assemble, and program custom PCBs for temperature sensors and lamps that do not have existing smart functionality on the market</li>
+    <li>Reverse engineer multiple lamp-type and controller pcbs in order to reprogram them to work with the esphome/home assistant system</li>
+    <li>Create a full motorized blind controller with PID position control for optimal speed and to prevent overshooting</li>
+</ul>
+
+
+
+    
+
+    
+        <ul id="skills">
+            
+            <li>Linux</li>
+            
+            <li>Arduino</li>
+            
+            <li>PCB Design</li>
             
         </ul>
     
@@ -787,10 +893,10 @@
 </div>
             
 
-            <p> I'm currently a student at Princeton University, pursuing a major in Computer Science, B.S.E.
-	    I'm always on the hunt for new technologies to try and more things to learn, especially in the fields of machine learning, robotics, networking, high performance computing and graphics, and physical simulation.
-            On the side, you might see me running along the lake shore, re-customizing my linux desktop, or curling up in bed with a nice book.
-	    If you have any questions, want to hit me up with an internship offer or two ;), or just want to geek out about SIGGRAPH papers, weird projects on Github, or cool math problems, please don't hesitate to shoot me a message!</p>
+            <p>I'm currently a student at Princeton University, majoring in Computer Science, B.S.E.<br>
+            I'm always on the hunt for new technologies to try and more things to learn, especially in the fields of machine learning, high performance computing, networking, and graphics.<br>
+            On the side, you might see me walking by the lake shore, tending to my mint garden, designing small gadgets and sensors, or curling up in bed with a nice book.<br>
+	    If you have any questions, want to hit me up with an internship offer :), or just want to geek out about SIGGRAPH papers, weird projects on Github, or cool math problems, please don't hesitate to shoot me a message!</p>
 
             <p>Thanks for stopping by!</p>
 
@@ -798,7 +904,6 @@
                 <li>Email: <a href="mailto:edward.yang6771@gmail.com" style="text-decoration:none; color:inherit;">edward.yang6771@gmail.com</a></li>
                 <li>LinkedIn: <a href="https://www.linkedin.com/in/efyang" style="text-decoration:none; color:inherit;">@efyang</a></li>
 		<li>Github: <a href="https://github.com/efyang" style="text-decoration:none; color:inherit;">@efyang</a></li>
-
             </ul>
         </div>
 

@@ -67,8 +67,8 @@ main {
 }
 
 .intro {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 5em;
+    font-family: 'Didact Gothic', sans-serif;
+    font-size: 6em;
     font-weight: 300;
 }
 
@@ -190,7 +190,7 @@ main>.tagline {
 }
 
 .projects h1 {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Didact Gothic', sans-serif;
     font-weight: 300;
     font-size: 4em;
     padding: 0px 1em 1em;
@@ -202,7 +202,7 @@ main>.tagline {
 }
 
 .project h2 {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Didact Gothic', sans-serif;
     font-weight: 300;
     font-size: 1.5em;
 }
@@ -210,12 +210,12 @@ main>.tagline {
 .project p {
     padding: 0 1.5em 1em;
     height: 100%;
-    font-size: 0.85em;
+    font-size: 0.9em;
     text-align: left;
 }
 
 .project ul:not(#skills) {
-    font-size: 0.85em;
+    font-size: 0.9em;
     margin: 0 1.5em 0;
     padding: 0 1.5em 1em;
     list-style-type: circle;
@@ -249,7 +249,7 @@ ul#skills li:hover {
     margin: auto;
     width: 90%;
     color: #485564;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Didact Gothic', sans-serif;
     font-weight: 300;
     text-align: center;
 }
