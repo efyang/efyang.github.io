@@ -2,7 +2,10 @@
 {% block title %}Edward Yang{% endblock %}
 {% block head %}
     {{ super() }}
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=IntersectionObserver"></script>
+    <script src="https://unpkg.com/observe-element-in-viewport"></script>
+    <script src="scripts/efficient-video.js" type="module"></script>
     <link rel="dns-prefetch" href="blog.html">
     <link rel="prefetch" href="blog.html">
     <link rel="prerender" href="blog.html">
