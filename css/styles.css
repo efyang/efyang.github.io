@@ -251,6 +251,7 @@ ul#skills li:hover {
     font-family: 'Didact Gothic', sans-serif;
     font-weight: 300;
     text-align: center;
+    max-width: 1000px;
 }
 
 .about-section h1 {
