@@ -1,16 +1,16 @@
 /* Theme */
 
 main {
-	background: #655f7e;
-	color: #FAFAFA;
+	background: linear-gradient(-15deg, #B8F2E6 33%, #FAF3DD 33%);
+	color: #5E6472;
 }
 
 .icons-social a {
-	color: #FAFAFA;
+	color: #5E6472;
 }
 
 .icons-social a svg path{
-	fill: #FAFAFA;
+	fill: #5E6472;
 }
 
 a:active, a:focus {
