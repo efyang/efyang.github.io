@@ -1,5 +1,5 @@
 navbar ul {
-    font-family: 'Didact Gothic', sans-serif;
+    font-family: 'Syne', sans-serif;
     font-size: 1.25em;
     font-weight: 400;
 
@@ -31,7 +31,7 @@ navbar li a:hover {
 }
 
 navbar li a#blog {
-    color: #ffbac5;
+    color: #B8F2E6;
 }
 
 
